@@ -1,0 +1,35 @@
+POST-HOC / EXPLORATORY (after confirmatory results were seen). Not a frozen endpoint; no gate, no p-value.
+
+[fedavg]
+  round: mean clean margin | min |clean margin| over seeds | mean absolute drop | mean relative drop (drop/|clean|)
+   r5    +4.292 |  4.220 |  -0.055 |  -0.013
+   r10   +4.716 |  4.498 |  -0.658 |  -0.139
+   r15   +5.039 |  4.864 |  -1.445 |  -0.287
+   r20   +5.388 |  5.211 |  -2.438 |  -0.454
+   r25   +5.678 |  5.503 |  -3.564 |  -0.628
+   r30   +6.102 |  6.004 |  -4.786 |  -0.784
+   r35   +6.608 |  6.413 |  -6.088 |  -0.920
+   r40   +7.164 |  6.889 |  -7.278 |  -1.015
+   r45   +7.581 |  7.279 |  -8.481 |  -1.118
+  clean margin r15: +5.27 +4.89 +4.95 +4.86 +5.22   r30: +6.00 +6.13 +6.01 +6.14 +6.23
+  relative drop r15: mean=-0.287 sd=0.065 range=[-0.344,-0.207] 95%tInt=[-0.368,-0.207] d_z=-4.42
+  relative drop r30: mean=-0.784 sd=0.073 range=[-0.846,-0.668] 95%tInt=[-0.875,-0.693] d_z=-10.67
+  S_rel = rel(r30) - rel(r15): mean=-0.496 sd=0.067 range=[-0.590,-0.413] 95%tInt=[-0.580,-0.413] d_z=-7.36  negative in 5/5 seeds
+  per-seed S_rel: 21:-0.462, 32:-0.413, 43:-0.487, 54:-0.590, 65:-0.530
+
+[fedprox]
+  round: mean clean margin | min |clean margin| over seeds | mean absolute drop | mean relative drop (drop/|clean|)
+   r5    +3.851 |  3.708 |  -0.062 |  -0.016
+   r10   +4.323 |  4.198 |  -0.675 |  -0.156
+   r15   +4.708 |  4.584 |  -1.488 |  -0.315
+   r20   +5.000 |  4.862 |  -2.418 |  -0.483
+   r25   +5.336 |  5.067 |  -3.469 |  -0.648
+   r30   +5.663 |  5.396 |  -4.626 |  -0.816
+   r35   +6.060 |  5.787 |  -5.715 |  -0.942
+   r40   +6.479 |  6.210 |  -6.750 |  -1.040
+   r45   +6.789 |  6.516 |  -7.731 |  -1.138
+  clean margin r15: +4.58 +4.75 +4.70 +4.66 +4.85   r30: +5.47 +5.86 +5.40 +5.82 +5.76
+  relative drop r15: mean=-0.315 sd=0.042 range=[-0.357,-0.244] 95%tInt=[-0.368,-0.263] d_z=-7.42
+  relative drop r30: mean=-0.816 sd=0.094 range=[-0.920,-0.686] 95%tInt=[-0.933,-0.699] d_z=-8.66
+  S_rel = rel(r30) - rel(r15): mean=-0.500 sd=0.079 range=[-0.599,-0.401] 95%tInt=[-0.599,-0.402] d_z=-6.31  negative in 5/5 seeds
+  per-seed S_rel: 21:-0.442, 32:-0.401, 43:-0.517, 54:-0.599, 65:-0.543

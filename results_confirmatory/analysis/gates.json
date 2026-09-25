@@ -1,0 +1,21 @@
+{
+  "partial": false,
+  "seeds": [
+    21,
+    32,
+    43,
+    54,
+    65
+  ],
+  "gates": {
+    "P_fedavg_sudden": true,
+    "P_fedavg_gradual": true,
+    "P_fedavg_recurring": true,
+    "P_fedprox_sudden": true,
+    "P_fedprox_gradual": true,
+    "P_fedprox_recurring": true,
+    "H1": true,
+    "H2a": true,
+    "H2b": false
+  }
+}
