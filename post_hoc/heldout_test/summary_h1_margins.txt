@@ -1,0 +1,4 @@
+POST-HOC (2026-10-21) per-seed held-out-test H1 margins; 20 frozen none checkpoints; no training.
+Test Regular rows: 258006; entropy floor 0.0000
+fedavg: S per seed 21:-2.9276, 32:-2.9557, 43:-3.2957, 54:-3.9207, 65:-3.6309 | mean -3.3461 sd 0.4305 negative 5/5
+fedprox: S per seed 21:-2.6380, 32:-2.7498, 43:-3.0144, 54:-3.8669, 65:-3.4487 | mean -3.1436 sd 0.5108 negative 5/5

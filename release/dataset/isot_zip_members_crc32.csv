@@ -1,0 +1,138 @@
+zip_member,relative_path,size_bytes,crc32_decimal,crc32_hex
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/DoS_2_5_1_20mins.pcap.csv,DoS/DoS_2_5_1_20mins.pcap.csv,7755065,1897575085,711ab2ad
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/DoS_3_5_1_10mins.pcap.csv,DoS/DoS_3_5_1_10mins.pcap.csv,62398890,3143349149,bb5bb39d
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/DoS_3_5_1_20mins.pcap.csv,DoS/DoS_3_5_1_20mins.pcap.csv,7702025,1821408283,6c907c1b
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/DoS_4_5_1_5mins.pcap.csv,DoS/DoS_4_5_1_5mins.pcap.csv,36062331,1210451238,48260526
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/DoS_5_5_1_5mins.pcap.csv,DoS/DoS_5_5_1_5mins.pcap.csv,2172453,2562275718,98b93986
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/Dos_1_4_30_20mins.pcap.csv,DoS/Dos_1_4_30_20mins.pcap.csv,9357871,1742790354,67e0ded2
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_10_5_4_4mins.pcap.csv,DoS/UDP_Flood_10_5_4_4mins.pcap.csv,15908711,613766845,249556bd
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_1_5_4_2mins.pcap.csv,DoS/UDP_Flood_1_5_4_2mins.pcap.csv,6681428,2982643091,b1c78593
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_2_5_4_2mins.pcap.csv,DoS/UDP_Flood_2_5_4_2mins.pcap.csv,14669161,2033588414,793618be
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_3_5_4_3mins.pcap.csv,DoS/UDP_Flood_3_5_4_3mins.pcap.csv,15835614,3697713432,dc66a118
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_4_5_4_2mins.pcap.csv,DoS/UDP_Flood_4_5_4_2mins.pcap.csv,17120193,1533521117,5b67acdd
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_5_5_4_7mins.pcap.csv,DoS/UDP_Flood_5_5_4_7mins.pcap.csv,42654454,1069168795,3fba389b
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_6_5_4_8mins.pcap.csv,DoS/UDP_Flood_6_5_4_8mins.pcap.csv,43885943,4263072823,fe195437
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_7_5_4_10mins.pcap.csv,DoS/UDP_Flood_7_5_4_10mins.pcap.csv,57234258,3036980578,b504a562
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_8_5_4_15mins.pcap.csv,DoS/UDP_Flood_8_5_4_15mins.pcap.csv,82267950,1981191969,76169721
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/UDP_Flood_9_5_4_9mins.pcap.csv,DoS/UDP_Flood_9_5_4_9mins.pcap.csv,58394178,3635108197,d8ab5965
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/hulk2_5_5_30mins.pcap.csv,DoS/hulk2_5_5_30mins.pcap.csv,6639328,815807676,30a03cbc
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/hulk_5_1.pcap.csv,DoS/hulk_5_1.pcap.csv,2944779,2087694128,7c6faf30
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/slowhttptest_2_5_5_45mins.pcap.csv,DoS/slowhttptest_2_5_5_45mins.pcap.csv,4357450,520493861,1f061b25
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/slowhttptest_5_1_15mins.pcap.csv,DoS/slowhttptest_5_1_15mins.pcap.csv,1760465,2036343105,79602141
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/slowloris_3_5_5_45mins.pcap.csv,DoS/slowloris_3_5_5_45mins.pcap.csv,596598,3045808391,b58b5907
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/slowloris_5_1_15mins.pcap.csv,DoS/slowloris_5_1_15mins.pcap.csv,92240,1200532037,478eaa45
+ISOT Drone Dataset/Dataset/new_feature_csv/DoS/slowloris_5_1_mul_launch.pcap.csv,DoS/slowloris_5_1_mul_launch.pcap.csv,183069,911353240,36522598
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_1_5_13_5mins.pcap.csv,Injection/Instruction_injection_1_5_13_5mins.pcap.csv,205774,1266550416,4b7e0690
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_2_5_13_7mins.pcap.csv,Injection/Instruction_injection_2_5_13_7mins.pcap.csv,315056,3111664315,b9783abb
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_3_5_13_10mins.pcap.csv,Injection/Instruction_injection_3_5_13_10mins.pcap.csv,366468,3631532626,d874ca52
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_4_5_13_6mins.pcap.csv,Injection/Instruction_injection_4_5_13_6mins.pcap.csv,267446,524126600,1f3d8988
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_5_5_13_10mins.pcap.csv,Injection/Instruction_injection_5_5_13_10mins.pcap.csv,441393,430300474,19a5dd3a
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_6_5_14_10mins.pcap.csv,Injection/Instruction_injection_6_5_14_10mins.pcap.csv,419171,741696050,2c356232
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_7_5_14_7mins.pcap.csv,Injection/Instruction_injection_7_5_14_7mins.pcap.csv,274668,875427594,342df70a
+ISOT Drone Dataset/Dataset/new_feature_csv/Injection/Instruction_injection_8_5_14_4mins.pcap.csv,Injection/Instruction_injection_8_5_14_4mins.pcap.csv,188242,1045889882,3e57035a
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_10_5_17_3mins.pcap.csv,Ip Spoofing/IP_spoofing_10_5_17_3mins.pcap.csv,249294,776563368,2e496aa8
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_1_5_17_5mins.pcap.csv,Ip Spoofing/IP_spoofing_1_5_17_5mins.pcap.csv,428925,2084787036,7c43535c
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_2_5_17_6mins.pcap.csv,Ip Spoofing/IP_spoofing_2_5_17_6mins.pcap.csv,460525,1620930862,609d712e
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_3_5_17_3mins.pcap.csv,Ip Spoofing/IP_spoofing_3_5_17_3mins.pcap.csv,206270,165953450,09e43faa
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_4_5_17_1mins.pcap.csv,Ip Spoofing/IP_spoofing_4_5_17_1mins.pcap.csv,94937,1858297342,6ec35dfe
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_5_5_17_8mins.pcap.csv,Ip Spoofing/IP_spoofing_5_5_17_8mins.pcap.csv,594293,3573228985,d4fb25b9
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_6_5_17_10mins.pcap.csv,Ip Spoofing/IP_spoofing_6_5_17_10mins.pcap.csv,828167,3890712083,e7e78e13
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_7_5_17_10mins.pcap.csv,Ip Spoofing/IP_spoofing_7_5_17_10mins.pcap.csv,777763,38508920,024b9978
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_8_5_17_8mins.pcap.csv,Ip Spoofing/IP_spoofing_8_5_17_8mins.pcap.csv,678263,2098490192,7d146b50
+ISOT Drone Dataset/Dataset/new_feature_csv/Ip Spoofing/IP_spoofing_9_5_17_6mins.pcap.csv,Ip Spoofing/IP_spoofing_9_5_17_6mins.pcap.csv,393987,456647968,1b37e520
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/MITM_1_5_3_fly_10mins.pcap.csv,MITM/MITM_1_5_3_fly_10mins.pcap.csv,9636089,2629225976,9cb6cdf8
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/MITM_2_5_3_fly_15mins.pcap.csv,MITM/MITM_2_5_3_fly_15mins.pcap.csv,10456415,3052984330,b5f8d80a
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/MITM_3_5_13_fly_10mins.pcap.csv,MITM/MITM_3_5_13_fly_10mins.pcap.csv,7970365,3039260816,b5277090
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/MITM_4_5_13_fly_5mins.pcap.csv,MITM/MITM_4_5_13_fly_5mins.pcap.csv,4881676,4135797394,f6834292
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/MITM_4_5_5_fly_12mins.pcap.csv,MITM/MITM_4_5_5_fly_12mins.pcap.csv,10868167,2258384358,869c35e6
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/MITM_5_5_13_fly_8mins.pcap.csv,MITM/MITM_5_5_13_fly_8mins.pcap.csv,6290506,2825903267,a86fdca3
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/mitm_station_mode_1_5_24.pcap.csv,MITM/mitm_station_mode_1_5_24.pcap.csv,714469,562962734,218e212e
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/mitm_station_mode_2_5_24.pcap.csv,MITM/mitm_station_mode_2_5_24.pcap.csv,753419,2272639712,8775bae0
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/mitm_station_mode_3_5_24.pcap.csv,MITM/mitm_station_mode_3_5_24.pcap.csv,699060,3173932691,bd2e5e93
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/mitm_station_mode_4_5_24.pcap.csv,MITM/mitm_station_mode_4_5_24.pcap.csv,700857,1597326490,5f35449a
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/mitm_station_mode_5_5_24.pcap.csv,MITM/mitm_station_mode_5_5_24.pcap.csv,662637,1268451680,4b9b0960
+ISOT Drone Dataset/Dataset/new_feature_csv/MITM/mitm_station_mode_6_5_24.pcap.csv,MITM/mitm_station_mode_6_5_24.pcap.csv,740560,450547801,1adad059
+ISOT Drone Dataset/Dataset/new_feature_csv/Manipulation/manipulate_1_5_22_10mins.pcap.csv,Manipulation/manipulate_1_5_22_10mins.pcap.csv,457085,3022572140,b428ca6c
+ISOT Drone Dataset/Dataset/new_feature_csv/Manipulation/manipulate_2_5_22_10mins.pcap.csv,Manipulation/manipulate_2_5_22_10mins.pcap.csv,491355,2185228376,823ff058
+ISOT Drone Dataset/Dataset/new_feature_csv/Manipulation/manipulate_3_5_22_10mins.pcap.csv,Manipulation/manipulate_3_5_22_10mins.pcap.csv,492828,3127484398,ba699fee
+ISOT Drone Dataset/Dataset/new_feature_csv/Manipulation/manipulate_4_5_22_10mins.pcap.csv,Manipulation/manipulate_4_5_22_10mins.pcap.csv,468707,2034076411,793d8afb
+ISOT Drone Dataset/Dataset/new_feature_csv/Manipulation/manipulate_5_5_22_10mins.pcap.csv,Manipulation/manipulate_5_5_22_10mins.pcap.csv,460431,2187757906,82668952
+ISOT Drone Dataset/Dataset/new_feature_csv/Manipulation/manipulate_6_5_22_10mins.pcap.csv,Manipulation/manipulate_6_5_22_10mins.pcap.csv,469627,1814747603,6c2ad9d3
+ISOT Drone Dataset/Dataset/new_feature_csv/Password Cracking/pwd_crack_deau_and_eqpol_1_5_6_30mins_raw.pcap.csv,Password Cracking/pwd_crack_deau_and_eqpol_1_5_6_30mins_raw.pcap.csv,47306271,4287275602,ff8aa252
+ISOT Drone Dataset/Dataset/new_feature_csv/Password Cracking/pwd_crack_deau_and_eqpol_2_5_6_45mins_raw.pcap.csv,Password Cracking/pwd_crack_deau_and_eqpol_2_5_6_45mins_raw.pcap.csv,75233462,3413160339,cb70b193
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_10_5_19.pcap.csv,Regular/regular_10_5_19.pcap.csv,12600994,4240444571,fcc00c9b
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_11_5_19.pcap.csv,Regular/regular_11_5_19.pcap.csv,12901066,1355521820,50cb9f1c
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_12_5_19.pcap.csv,Regular/regular_12_5_19.pcap.csv,12549469,2702570222,a115f2ee
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_13_5_20.pcap.csv,Regular/regular_13_5_20.pcap.csv,12541179,4225320787,fbd94753
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_14_5_20.pcap.csv,Regular/regular_14_5_20.pcap.csv,12984232,3547316367,d36fc08f
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_15_5_20.pcap.csv,Regular/regular_15_5_20.pcap.csv,8193584,1263830160,4b548490
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_16_1_5_20.pcap.csv,Regular/regular_16_1_5_20.pcap.csv,6478248,862710751,336bebdf
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_16_2_5_20.pcap.csv,Regular/regular_16_2_5_20.pcap.csv,5567342,2539112070,9757c686
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_17_5_20.pcap.csv,Regular/regular_17_5_20.pcap.csv,13690023,1684901301,646d8db5
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_18_5_20.pcap.csv,Regular/regular_18_5_20.pcap.csv,12918694,1052561303,3ebccf97
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_19_5_20.pcap.csv,Regular/regular_19_5_20.pcap.csv,13186689,1161710516,453e4bb4
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_1_5_19.pcap.csv,Regular/regular_1_5_19.pcap.csv,14008682,1270948918,4bc12436
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_20_5_20.pcap.csv,Regular/regular_20_5_20.pcap.csv,13170685,2189091225,827ae199
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_21_5_20.pcap.csv,Regular/regular_21_5_20.pcap.csv,13067036,3303049299,c4e08853
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_22_5_21.pcap.csv,Regular/regular_22_5_21.pcap.csv,13528938,3753062710,dfb33136
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_23_5_21.pcap.csv,Regular/regular_23_5_21.pcap.csv,12605039,2739622546,a34b5292
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_24_5_21.pcap.csv,Regular/regular_24_5_21.pcap.csv,12218698,3073848388,b7373444
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_25_5_21.pcap.csv,Regular/regular_25_5_21.pcap.csv,13517914,2056268870,7a902c46
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_26_5_21.pcap.csv,Regular/regular_26_5_21.pcap.csv,13225025,1484427119,587a8f6f
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_27_5_21.pcap.csv,Regular/regular_27_5_21.pcap.csv,13788837,517482708,1ed828d4
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_28_5_21.pcap.csv,Regular/regular_28_5_21.pcap.csv,14056518,3250933663,c1c54f9f
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_29_5_21.pcap.csv,Regular/regular_29_5_21.pcap.csv,12539397,1780263198,6a1ca91e
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_2_5_19.pcap.csv,Regular/regular_2_5_19.pcap.csv,11447271,3045195113,b581fd69
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_30_5_21.pcap.csv,Regular/regular_30_5_21.pcap.csv,13641284,3551214648,d3ab3c38
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_31_5_22.pcap.csv,Regular/regular_31_5_22.pcap.csv,13226057,2571614380,9947b8ac
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_32_5_22.pcap.csv,Regular/regular_32_5_22.pcap.csv,12719637,1656679375,62beebcf
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_33_5_22.pcap.csv,Regular/regular_33_5_22.pcap.csv,12884467,272496700,103df83c
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_34_5_23.pcap.csv,Regular/regular_34_5_23.pcap.csv,12080918,1206926720,47f03d80
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_35_5_23.pcap.csv,Regular/regular_35_5_23.pcap.csv,12626017,4157122519,f7c8a7d7
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_36_5_23.pcap.csv,Regular/regular_36_5_23.pcap.csv,11621809,1454770699,56b60a0b
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_37_5_23.pcap.csv,Regular/regular_37_5_23.pcap.csv,12741395,2809757731,a7798023
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_38_5_23.pcap.csv,Regular/regular_38_5_23.pcap.csv,13333134,1891866885,70c39905
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_39_5_23.pcap.csv,Regular/regular_39_5_23.pcap.csv,11452779,3204310795,befde70b
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_3_5_19.pcap.csv,Regular/regular_3_5_19.pcap.csv,11739167,3777683887,e12ae1af
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_40_5_23.pcap.csv,Regular/regular_40_5_23.pcap.csv,12210155,2837491933,a920b0dd
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_41_5_23.pcap.csv,Regular/regular_41_5_23.pcap.csv,12036025,3381485989,c98d61a5
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_42_5_23.pcap.csv,Regular/regular_42_5_23.pcap.csv,11869755,2025697340,78bdb03c
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_43_5_23.pcap.csv,Regular/regular_43_5_23.pcap.csv,12613152,2449273547,91fcf2cb
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_44_5_23.pcap.csv,Regular/regular_44_5_23.pcap.csv,12596710,1940945027,73b07883
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_45_5_23.pcap.csv,Regular/regular_45_5_23.pcap.csv,13086866,2698826009,a0dcd119
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_46_5_23.pcap.csv,Regular/regular_46_5_23.pcap.csv,13202947,1814977065,6c2e5a29
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_47_5_23.pcap.csv,Regular/regular_47_5_23.pcap.csv,11305959,636823511,25f527d7
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_48_5_23.pcap.csv,Regular/regular_48_5_23.pcap.csv,11960263,4154552103,f7a16f27
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_49_5_24.pcap.csv,Regular/regular_49_5_24.pcap.csv,11257135,1344623596,502553ec
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_4_5_19.pcap.csv,Regular/regular_4_5_19.pcap.csv,12845507,2941914455,af5a0d57
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_50_5_24.pcap.csv,Regular/regular_50_5_24.pcap.csv,12869282,2127992957,7ed6987d
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_51_5_24.pcap.csv,Regular/regular_51_5_24.pcap.csv,13781128,648959751,26ae5707
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_52_5_25.pcap.csv,Regular/regular_52_5_25.pcap.csv,12647622,2561208247,98a8efb7
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_53_5_25.pcap.csv,Regular/regular_53_5_25.pcap.csv,12074420,2188131913,826c3e49
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_54_5_25.pcap.csv,Regular/regular_54_5_25.pcap.csv,13442732,2456064709,926492c5
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_5_5_19.pcap.csv,Regular/regular_5_5_19.pcap.csv,13193230,4112327207,f51d2227
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_6_5_19.pcap.csv,Regular/regular_6_5_19.pcap.csv,13485858,612149451,247ca8cb
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_7_5_19.pcap.csv,Regular/regular_7_5_19.pcap.csv,12075998,1419017883,54947e9b
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_8_5_19.pcap.csv,Regular/regular_8_5_19.pcap.csv,11853091,1174641342,46039abe
+ISOT Drone Dataset/Dataset/new_feature_csv/Regular/regular_9_5_19.pcap.csv,Regular/regular_9_5_19.pcap.csv,11766284,349492481,14d4d501
+ISOT Drone Dataset/Dataset/new_feature_csv/Replay/replay_1_5_22_10mins.pcap.csv,Replay/replay_1_5_22_10mins.pcap.csv,418186,4047613919,f141afdf
+ISOT Drone Dataset/Dataset/new_feature_csv/Replay/replay_2_5_22_10mins.pcap.csv,Replay/replay_2_5_22_10mins.pcap.csv,484792,3576886719,d532f5bf
+ISOT Drone Dataset/Dataset/new_feature_csv/Replay/replay_3_5_22_10mins.pcap.csv,Replay/replay_3_5_22_10mins.pcap.csv,485462,3513289719,d1688bf7
+ISOT Drone Dataset/Dataset/new_feature_csv/Replay/replay_4_5_22_10mins.pcap.csv,Replay/replay_4_5_22_10mins.pcap.csv,396567,3048691187,b5b755f3
+ISOT Drone Dataset/Dataset/new_feature_csv/Replay/replay_5_5_22_10mins.pcap.csv,Replay/replay_5_5_22_10mins.pcap.csv,449092,3930925408,ea4d2960
+ISOT Drone Dataset/Dataset/new_feature_csv/Replay/replay_6_5_22_10mins.pcap.csv,Replay/replay_6_5_22_10mins.pcap.csv,409047,2912050346,ad925caa
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_1_5_16_8mins.pcap.csv,Unauth/unauthen_1_5_16_8mins.pcap.csv,327727,3342918505,c740e369
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_2_5_16_9mins.pcap.csv,Unauth/unauthen_2_5_16_9mins.pcap.csv,384719,267653200,0ff41050
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_3_5_16_6mins.pcap.csv,Unauth/unauthen_3_5_16_6mins.pcap.csv,261011,1338659123,4fca5133
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_4_5_16_6mins.pcap.csv,Unauth/unauthen_4_5_16_6mins.pcap.csv,306496,1385288750,5291d42e
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_5_5_16_10mins.pcap.csv,Unauth/unauthen_5_5_16_10mins.pcap.csv,411642,2154079976,8064a6e8
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_6_5_16_10mins.pcap.csv,Unauth/unauthen_6_5_16_10mins.pcap.csv,409303,268146084,0ffb95a4
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_7_5_16_9mins.pcap.csv,Unauth/unauthen_7_5_16_9mins.pcap.csv,384645,667533177,27c9bf79
+ISOT Drone Dataset/Dataset/new_feature_csv/Unauth/unauthen_8_5_16_3mins.pcap.csv,Unauth/unauthen_8_5_16_3mins.pcap.csv,105268,378202368,168ae900
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_1_5_13_8mins.pcap.csv,Video/video_1_5_13_8mins.pcap.csv,6226773,3510705510,d1411d66
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_2_5_13_8mins.pcap.csv,Video/video_2_5_13_8mins.pcap.csv,5083295,800569571,2fb7b8e3
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_3_5_13_11mins.pcap.csv,Video/video_3_5_13_11mins.pcap.csv,5609367,2105049872,7d788310
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_4_5_14_8mins.pcap.csv,Video/video_4_5_14_8mins.pcap.csv,5635855,3618357002,d7abbf0a
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_5_5_14_10mins.pcap.csv,Video/video_5_5_14_10mins.pcap.csv,8270456,2276593982,87b2113e
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_6_5_14_5mins.pcap.csv,Video/video_6_5_14_5mins.pcap.csv,4356170,1654568088,629eb498
+ISOT Drone Dataset/Dataset/new_feature_csv/Video/video_7_5_14_10mins.pcap.csv,Video/video_7_5_14_10mins.pcap.csv,4934096,1698346167,653ab4b7

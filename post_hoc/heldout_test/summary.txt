@@ -1,0 +1,65 @@
+POST-HOC (2026-10-19, after confirmatory results were seen). Held-out test = 28 reserved sessions, read for the first time here. No training, no selection, no frozen file changed. No gate, no p-value.
+Test rows: 550338; Entropy floor (pooled test 5th pct): 0.0000
+Test support: DoS=183590, Injection=1311, Ip Spoofing=1374, MITM=2797, Manipulation=1011, Password Cracking=89053, Regular=258006, Replay=1072, Unauth=1340, Video=10784
+Macro-F1 label set (classes present in test): DoS, Injection, Ip Spoofing, MITM, Manipulation, Password Cracking, Regular, Replay, Unauth, Video
+Checkpoints evaluated: 480 (all saved checkpoints of the 40 runs)
+
+PH-L1  transformed-minus-clean, mean over saved full-strength rounds  [test | validation on the same rounds]
+  fedavg  sudden    macro-F1        TEST mean=-0.0722 sd=0.0107 range=[-0.0884,-0.0623] 95%t=[-0.0855,-0.0589] d_z=-6.74 neg=5/5
+                                    VAL  mean=-0.0124 sd=0.0098 range=[-0.0204,+0.0034] 95%t=[-0.0246,-0.0003] d_z=-1.27 neg=4/5
+  fedavg  sudden    Regular recall  TEST mean=-0.0150 sd=0.0046 range=[-0.0194,-0.0079] 95%t=[-0.0207,-0.0092] d_z=-3.22 neg=5/5
+                                    VAL  mean=-0.0131 sd=0.0043 range=[-0.0172,-0.0066] 95%t=[-0.0184,-0.0077] d_z=-3.01 neg=5/5
+  fedavg  gradual   macro-F1        TEST mean=-0.0763 sd=0.0111 range=[-0.0913,-0.0636] 95%t=[-0.0900,-0.0625] d_z=-6.89 neg=5/5
+                                    VAL  mean=-0.0126 sd=0.0105 range=[-0.0206,+0.0054] 95%t=[-0.0257,+0.0005] d_z=-1.20 neg=4/5
+  fedavg  gradual   Regular recall  TEST mean=-0.0130 sd=0.0038 range=[-0.0176,-0.0078] 95%t=[-0.0176,-0.0083] d_z=-3.44 neg=5/5
+                                    VAL  mean=-0.0109 sd=0.0034 range=[-0.0151,-0.0062] 95%t=[-0.0152,-0.0066] d_z=-3.17 neg=5/5
+  fedavg  recurring macro-F1        TEST mean=-0.0875 sd=0.0115 range=[-0.1054,-0.0738] 95%t=[-0.1017,-0.0733] d_z=-7.64 neg=5/5
+                                    VAL  mean=-0.0206 sd=0.0132 range=[-0.0330,+0.0018] 95%t=[-0.0370,-0.0042] d_z=-1.56 neg=4/5
+  fedavg  recurring Regular recall  TEST mean=-0.0519 sd=0.0313 range=[-0.1012,-0.0252] 95%t=[-0.0907,-0.0131] d_z=-1.66 neg=5/5
+                                    VAL  mean=-0.0498 sd=0.0311 range=[-0.0992,-0.0237] 95%t=[-0.0885,-0.0112] d_z=-1.60 neg=5/5
+  fedprox sudden    macro-F1        TEST mean=-0.0750 sd=0.0132 range=[-0.0861,-0.0525] 95%t=[-0.0913,-0.0586] d_z=-5.70 neg=5/5
+                                    VAL  mean=-0.0248 sd=0.0078 range=[-0.0301,-0.0126] 95%t=[-0.0344,-0.0151] d_z=-3.19 neg=5/5
+  fedprox sudden    Regular recall  TEST mean=-0.0246 sd=0.0145 range=[-0.0469,-0.0123] 95%t=[-0.0426,-0.0066] d_z=-1.69 neg=5/5
+                                    VAL  mean=-0.0228 sd=0.0143 range=[-0.0449,-0.0109] 95%t=[-0.0405,-0.0051] d_z=-1.60 neg=5/5
+  fedprox gradual   macro-F1        TEST mean=-0.0836 sd=0.0122 range=[-0.0918,-0.0624] 95%t=[-0.0987,-0.0684] d_z=-6.86 neg=5/5
+                                    VAL  mean=-0.0296 sd=0.0084 range=[-0.0376,-0.0168] 95%t=[-0.0400,-0.0192] d_z=-3.53 neg=5/5
+  fedprox gradual   Regular recall  TEST mean=-0.0198 sd=0.0108 range=[-0.0363,-0.0084] 95%t=[-0.0332,-0.0064] d_z=-1.84 neg=5/5
+                                    VAL  mean=-0.0179 sd=0.0105 range=[-0.0340,-0.0067] 95%t=[-0.0310,-0.0049] d_z=-1.71 neg=5/5
+  fedprox recurring macro-F1        TEST mean=-0.0910 sd=0.0081 range=[-0.0989,-0.0805] 95%t=[-0.1011,-0.0809] d_z=-11.18 neg=5/5
+                                    VAL  mean=-0.0330 sd=0.0056 range=[-0.0416,-0.0275] 95%t=[-0.0400,-0.0260] d_z=-5.85 neg=5/5
+  fedprox recurring Regular recall  TEST mean=-0.0752 sd=0.0428 range=[-0.1274,-0.0309] 95%t=[-0.1283,-0.0221] d_z=-1.76 neg=5/5
+                                    VAL  mean=-0.0738 sd=0.0430 range=[-0.1264,-0.0293] 95%t=[-0.1272,-0.0205] d_z=-1.72 neg=5/5
+
+PH-L3  clean schedule model minus clean none model (macro-F1) at end of each post-removal interval
+  fedavg  sudden    r45  TEST mean=-0.0006 sd=0.0029 range=[-0.0053,+0.0017] 95%t=[-0.0042,+0.0030] d_z=-0.20 neg=2/5
+                         VAL  mean=+0.0000 sd=0.0023 range=[-0.0024,+0.0039] 95%t=[-0.0029,+0.0029] d_z=+0.01 neg=4/5
+  fedavg  gradual   r45  TEST mean=+0.0017 sd=0.0031 range=[-0.0031,+0.0057] 95%t=[-0.0022,+0.0056] d_z=+0.55 neg=1/5
+                         VAL  mean=+0.0022 sd=0.0072 range=[-0.0061,+0.0134] 95%t=[-0.0067,+0.0112] d_z=+0.31 neg=2/5
+  fedavg  recurring r45  TEST mean=+0.0004 sd=0.0034 range=[-0.0023,+0.0051] 95%t=[-0.0039,+0.0047] d_z=+0.11 neg=3/5
+                         VAL  mean=+0.0008 sd=0.0035 range=[-0.0026,+0.0066] 95%t=[-0.0035,+0.0051] d_z=+0.23 neg=3/5
+  fedprox sudden    r45  TEST mean=-0.0021 sd=0.0024 range=[-0.0049,+0.0014] 95%t=[-0.0051,+0.0008] d_z=-0.91 neg=4/5
+                         VAL  mean=-0.0017 sd=0.0031 range=[-0.0067,+0.0005] 95%t=[-0.0055,+0.0021] d_z=-0.56 neg=2/5
+  fedprox gradual   r45  TEST mean=-0.0022 sd=0.0022 range=[-0.0052,+0.0008] 95%t=[-0.0049,+0.0005] d_z=-1.01 neg=4/5
+                         VAL  mean=-0.0014 sd=0.0030 range=[-0.0063,+0.0011] 95%t=[-0.0052,+0.0023] d_z=-0.48 neg=3/5
+  fedprox recurring r45  TEST mean=-0.0019 sd=0.0017 range=[-0.0041,-0.0000] 95%t=[-0.0041,+0.0002] d_z=-1.11 neg=5/5
+                         VAL  mean=-0.0010 sd=0.0014 range=[-0.0035,+0.0001] 95%t=[-0.0028,+0.0008] d_z=-0.70 neg=4/5
+
+PH-H1  none models: test margin drop (Regular-minus-MITM) under full-strength transform; S = drop30 - drop15
+  fedavg  drop15 mean=-1.4527 sd=0.3144 range=[-1.7126,-1.0951] 95%t=[-1.8431,-1.0623] d_z=-4.62 neg=5/5
+          drop30 mean=-4.7988 sd=0.4931 range=[-5.2871,-4.0228] 95%t=[-5.4111,-4.1866] d_z=-9.73 neg=5/5
+          S      mean=-3.3461 sd=0.4305 range=[-3.9207,-2.9276] 95%t=[-3.8807,-2.8116] d_z=-7.77 neg=5/5
+  fedprox drop15 mean=-1.4939 sd=0.2226 range=[-1.7005,-1.1266] 95%t=[-1.7703,-1.2174] d_z=-6.71 neg=5/5
+          drop30 mean=-4.6374 sd=0.6232 range=[-5.3727,-3.7646] 95%t=[-5.4113,-3.8636] d_z=-7.44 neg=5/5
+          S      mean=-3.1436 sd=0.5108 range=[-3.8669,-2.6380] 95%t=[-3.7778,-2.5093] d_z=-6.15 neg=5/5
+
+PH-H2  transformed-minus-clean rate of true class -> MITM, pooled over saved full-strength rounds (test)
+  fedavg  DoS     ->MITM mean=+0.0000 sd=0.0000 range=[+0.0000,+0.0000] 95%t=[-0.0000,+0.0000] d_z=+1.17 neg=0/5
+  fedavg  Regular ->MITM mean=+0.0335 sd=0.0163 range=[+0.0170,+0.0579] 95%t=[+0.0133,+0.0537] d_z=+2.06 neg=0/5
+  fedavg  Video   ->MITM mean=+0.4369 sd=0.0506 range=[+0.3530,+0.4858] 95%t=[+0.3740,+0.4998] d_z=+8.63 neg=0/5
+  fedavg  H2a conditions met in 5/5 seeds; H2b conditions met in 1/5 seeds (descriptive)
+  fedprox DoS     ->MITM mean=+0.0000 sd=0.0000 range=[+0.0000,+0.0000] 95%t=[+0.0000,+0.0000] d_z=+4.23 neg=0/5
+  fedprox Regular ->MITM mean=+0.0498 sd=0.0275 range=[+0.0225,+0.0863] 95%t=[+0.0156,+0.0840] d_z=+1.81 neg=0/5
+  fedprox Video   ->MITM mean=+0.4504 sd=0.0782 range=[+0.3745,+0.5717] 95%t=[+0.3533,+0.5475] d_z=+5.76 neg=0/5
+  fedprox H2a conditions met in 5/5 seeds; H2b conditions met in 2/5 seeds (descriptive)
+
+Elapsed 1792s

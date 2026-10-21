@@ -1,0 +1,14 @@
+{
+  "held_out_test": {
+    "sessions": 28,
+    "rows": 550338
+  },
+  "train_clients": {
+    "sessions": 91,
+    "rows": 2150122
+  },
+  "validation": {
+    "sessions": 18,
+    "rows": 245526
+  }
+}

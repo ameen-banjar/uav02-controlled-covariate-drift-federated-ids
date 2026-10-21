@@ -1,0 +1,14 @@
+# UAV-02 RECONSTRUCTED requirements (written 2026-10-21 for the release package).
+# NOT a contemporaneous lock file: no pip freeze was saved at run time.
+# Version sources, in order of evidential strength (see environment/PROVENANCE.md):
+#   torch      2.10.0 - per-seed provenance_seed*.json, written by the frozen runner at each seed start (contemporaneous)
+#   others            - RUN_MANIFEST.json "environment", compiled post hoc on 2026-09-25 12:01 (+03:00), after the runs ended
+# Python 3.11.4 (RUN_MANIFEST.json). Original hardware: Apple M1, macOS arm64, PyTorch MPS backend.
+# The analysis/table/figure commands need only numpy, scipy, matplotlib (+ pandas/torch/scikit-learn for
+# the dataset check, held-out re-execution and training).
+torch==2.10.0
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.16.3
+matplotlib==3.10.7

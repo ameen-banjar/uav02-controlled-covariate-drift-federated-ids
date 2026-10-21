@@ -1,0 +1,13 @@
+POST-HOC companion: held-out-test PH-L1 with the 9 validation labels (Password Cracking excluded) and Password Cracking recall change.
+  fedavg  sudden    macro-F1(9 labels) mean=-0.0797 sd=0.0118 range=[-0.0981,-0.0691] 95%t=[-0.0944,-0.0650] neg=5/5
+                    PassCrack recall Δ mean=-0.0059 sd=0.0089 range=[-0.0217,-0.0013] 95%t=[-0.0169,+0.0052] neg=5/5   (clean PC recall mean 0.878)
+  fedavg  gradual   macro-F1(9 labels) mean=-0.0845 sd=0.0124 range=[-0.1014,-0.0702] 95%t=[-0.0999,-0.0692] neg=5/5
+                    PassCrack recall Δ mean=-0.0032 sd=0.0030 range=[-0.0083,-0.0008] 95%t=[-0.0069,+0.0004] neg=5/5   (clean PC recall mean 0.898)
+  fedavg  recurring macro-F1(9 labels) mean=-0.0969 sd=0.0128 range=[-0.1171,-0.0819] 95%t=[-0.1127,-0.0810] neg=5/5
+                    PassCrack recall Δ mean=-0.0043 sd=0.0066 range=[-0.0161,-0.0010] 95%t=[-0.0125,+0.0039] neg=5/5   (clean PC recall mean 0.911)
+  fedprox sudden    macro-F1(9 labels) mean=-0.0833 sd=0.0146 range=[-0.0957,-0.0583] 95%t=[-0.1014,-0.0651] neg=5/5
+                    PassCrack recall Δ mean=-0.0004 sd=0.0001 range=[-0.0005,-0.0003] 95%t=[-0.0005,-0.0003] neg=5/5   (clean PC recall mean 0.999)
+  fedprox gradual   macro-F1(9 labels) mean=-0.0928 sd=0.0135 range=[-0.1020,-0.0693] 95%t=[-0.1096,-0.0760] neg=5/5
+                    PassCrack recall Δ mean=-0.0004 sd=0.0001 range=[-0.0005,-0.0003] 95%t=[-0.0004,-0.0003] neg=5/5   (clean PC recall mean 0.999)
+  fedprox recurring macro-F1(9 labels) mean=-0.1011 sd=0.0090 range=[-0.1099,-0.0894] 95%t=[-0.1123,-0.0898] neg=5/5
+                    PassCrack recall Δ mean=-0.0004 sd=0.0001 range=[-0.0005,-0.0003] 95%t=[-0.0004,-0.0003] neg=5/5   (clean PC recall mean 1.000)

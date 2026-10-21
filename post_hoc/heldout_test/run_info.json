@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-19",
+  "label": "POST-HOC, after confirmatory results were seen",
+  "script_sha256": "a2eca0dfd5c5aa5513596a301922c7065909c6db43ab1b2b64b46287fd6b9105",
+  "torch": "2.10.0",
+  "device": "cpu",
+  "n_checkpoints": 480,
+  "test_rows": 550338,
+  "test_support": {
+    "DoS": 183590,
+    "Injection": 1311,
+    "Ip Spoofing": 1374,
+    "MITM": 2797,
+    "Manipulation": 1011,
+    "Password Cracking": 89053,
+    "Regular": 258006,
+    "Replay": 1072,
+    "Unauth": 1340,
+    "Video": 10784
+  },
+  "entropy_floor_test": 0.0,
+  "frozen_code_verified": true
+}
