@@ -1,0 +1,55 @@
+POST-HOC (2026-11-06) Duration ablation; saved checkpoints only; no training.
+Duration column statistics: {
+ "validation": {
+  "rows": 245526,
+  "share_raw_gt255": 0.0,
+  "share_transformed_gt255": 0.7989500093676434,
+  "raw_max": 255.0,
+  "raw_median": 235.8,
+  "share_zero": 0.0
+ },
+ "test": {
+  "rows": 550338,
+  "share_raw_gt255": 0.0,
+  "share_transformed_gt255": 0.49701819609040265,
+  "raw_max": 255.0,
+  "raw_median": 64.0,
+  "share_zero": 0.16181510271869287
+ },
+ "train_exposed_clients": {
+  "rows": 373631,
+  "share_raw_gt255": 0.0,
+  "share_transformed_gt255": 0.9488693390002435,
+  "raw_max": 255.0,
+  "raw_median": 235.8,
+  "share_zero": 0.0
+ }
+}
+H1 validation fedavg: full: mean S -3.3409, negative 5/5 | no_dur: mean S +0.0206, negative 0/5 | dur_only: mean S -3.4044, negative 5/5 | dur_clip: mean S -0.6891, negative 5/5
+H1 validation fedprox: full: mean S -3.1385, negative 5/5 | no_dur: mean S -0.0824, negative 5/5 | dur_only: mean S -3.1324, negative 5/5 | dur_clip: mean S -0.7183, negative 5/5
+H1 test fedavg: full: mean S -3.3461, negative 5/5 | no_dur: mean S +0.0208, negative 0/5 | dur_only: mean S -3.4106, negative 5/5 | dur_clip: mean S -0.6905, negative 5/5
+H1 test fedprox: full: mean S -3.1436, negative 5/5 | no_dur: mean S -0.0837, negative 5/5 | dur_only: mean S -3.1374, negative 5/5 | dur_clip: mean S -0.7219, negative 5/5
+L1 val saved-rounds fedavg sudden full: dMF1 -0.0124 (neg 4/5) dRegRec -0.0131 (neg 5/5) Reg->MITM +0.0135 Video->MITM +0.3912
+L1 val saved-rounds fedavg sudden no_dur: dMF1 -0.0241 (neg 5/5) dRegRec +0.0002 (neg 0/5) Reg->MITM +0.0002 Video->MITM -0.0016
+L1 val saved-rounds fedavg sudden dur_only: dMF1 -0.0241 (neg 5/5) dRegRec -0.0087 (neg 5/5) Reg->MITM +0.0089 Video->MITM +0.4118
+L1 val saved-rounds fedavg sudden dur_clip: dMF1 -0.0204 (neg 5/5) dRegRec -0.0004 (neg 5/5) Reg->MITM +0.0009 Video->MITM -0.0013
+L1 val saved-rounds fedavg gradual full: dMF1 -0.0126 (neg 4/5) dRegRec -0.0109 (neg 5/5) Reg->MITM +0.0114 Video->MITM +0.4165
+L1 val saved-rounds fedavg gradual no_dur: dMF1 -0.0252 (neg 5/5) dRegRec +0.0003 (neg 0/5) Reg->MITM +0.0001 Video->MITM +0.0025
+L1 val saved-rounds fedavg gradual dur_only: dMF1 -0.0249 (neg 5/5) dRegRec -0.0076 (neg 5/5) Reg->MITM +0.0078 Video->MITM +0.4386
+L1 val saved-rounds fedavg gradual dur_clip: dMF1 -0.0216 (neg 5/5) dRegRec -0.0004 (neg 5/5) Reg->MITM +0.0009 Video->MITM +0.0029
+L1 val saved-rounds fedavg recurring full: dMF1 -0.0206 (neg 4/5) dRegRec -0.0498 (neg 5/5) Reg->MITM +0.0503 Video->MITM +0.5294
+L1 val saved-rounds fedavg recurring no_dur: dMF1 -0.0304 (neg 5/5) dRegRec +0.0002 (neg 0/5) Reg->MITM +0.0001 Video->MITM +0.0011
+L1 val saved-rounds fedavg recurring dur_only: dMF1 -0.0352 (neg 5/5) dRegRec -0.0348 (neg 5/5) Reg->MITM +0.0349 Video->MITM +0.5356
+L1 val saved-rounds fedavg recurring dur_clip: dMF1 -0.0264 (neg 5/5) dRegRec -0.0008 (neg 5/5) Reg->MITM +0.0011 Video->MITM +0.0015
+L1 val saved-rounds fedprox sudden full: dMF1 -0.0248 (neg 5/5) dRegRec -0.0228 (neg 5/5) Reg->MITM +0.0234 Video->MITM +0.4366
+L1 val saved-rounds fedprox sudden no_dur: dMF1 -0.0294 (neg 5/5) dRegRec -0.0001 (neg 3/5) Reg->MITM +0.0006 Video->MITM +0.0240
+L1 val saved-rounds fedprox sudden dur_only: dMF1 -0.0309 (neg 5/5) dRegRec -0.0147 (neg 5/5) Reg->MITM +0.0148 Video->MITM +0.4593
+L1 val saved-rounds fedprox sudden dur_clip: dMF1 -0.0287 (neg 5/5) dRegRec -0.0009 (neg 5/5) Reg->MITM +0.0014 Video->MITM +0.0243
+L1 val saved-rounds fedprox gradual full: dMF1 -0.0296 (neg 5/5) dRegRec -0.0179 (neg 5/5) Reg->MITM +0.0186 Video->MITM +0.4509
+L1 val saved-rounds fedprox gradual no_dur: dMF1 -0.0318 (neg 5/5) dRegRec -0.0001 (neg 4/5) Reg->MITM +0.0006 Video->MITM +0.0325
+L1 val saved-rounds fedprox gradual dur_only: dMF1 -0.0335 (neg 5/5) dRegRec -0.0122 (neg 5/5) Reg->MITM +0.0123 Video->MITM +0.4712
+L1 val saved-rounds fedprox gradual dur_clip: dMF1 -0.0313 (neg 5/5) dRegRec -0.0010 (neg 5/5) Reg->MITM +0.0015 Video->MITM +0.0327
+L1 val saved-rounds fedprox recurring full: dMF1 -0.0330 (neg 5/5) dRegRec -0.0738 (neg 5/5) Reg->MITM +0.0746 Video->MITM +0.5648
+L1 val saved-rounds fedprox recurring no_dur: dMF1 -0.0318 (neg 5/5) dRegRec +0.0000 (neg 1/5) Reg->MITM +0.0005 Video->MITM +0.0246
+L1 val saved-rounds fedprox recurring dur_only: dMF1 -0.0426 (neg 5/5) dRegRec -0.0493 (neg 5/5) Reg->MITM +0.0495 Video->MITM +0.5762
+L1 val saved-rounds fedprox recurring dur_clip: dMF1 -0.0305 (neg 5/5) dRegRec -0.0011 (neg 5/5) Reg->MITM +0.0016 Video->MITM +0.0249
