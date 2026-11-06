@@ -10,8 +10,19 @@
 | Freeze | tag `uav02-v2-confirmatory-freeze` (commit `8a22943`) | `DESIGN_V2.md` (changes, endpoints, predictions), `SHA256SUMS_v2`, `code/` |
 | Results | tag `uav02-v2-results` (commit `361805e`) | `results_confirmatory/` (40 round CSVs, 10 H1 margin CSVs, checkpoints, provenance, `analysis/`), `logs/` |
 | Display | tag `uav02-release-v2.0.0` | `post_hoc/` (Figures 2–5, `h2_pooled_per_seed.csv`), `release_tools/` |
+| Review additions | tag `uav02-release-v2.0.1` | `post_hoc/h1_relative_v2.py` + `.txt` (post-hoc normalized H1), `evidence/` (GitHub events snapshot), notes below |
 
 The runner refused to start unless every file in `SHA256SUMS_v2` matched, the repository was clean and HEAD carried the freeze tag. All five seeds exited normally; no run triggered the physical-range guard; the frozen analysis was run once.
+
+## Evidence that the freeze was public before the first v2 run
+
+- GitHub's public Events API records a `PushEvent` to `main` with head `8a22943` (the freeze commit) at **2026-11-05T23:28:29Z**; snapshot in `evidence/github_events_snapshot_2026-11-06.json` (GitHub keeps these events for 90 days; the snapshot was saved by the author, so it is a record, not an independent attestation).
+- The first v2 runs (seeds 76, 87, 98) record `started_unix` 1793921320.04 = **2026-11-05T23:28:40Z** in `results_confirmatory/provenance_seed*.json`, 11 seconds after that push; seeds 109 and 120 started at 2026-11-06T02:30Z.
+- The annotated freeze tag object is dated 2026-11-06T02:28:26+03:00 (23:28:26Z).
+
+## Notes on frozen files
+
+Some comments inside the frozen code are outdated and are left unchanged because the files are hashed: usage examples in the runner docstring may name an earlier seed, and a comment in `algorithms.py` mentions SGD, whereas local training uses Adam (learning rate 0.001), as the code itself and the manuscript state. The frozen analysis report labels the round-by-round H1 margin drops "descriptive dose-response"; these are drops at a fixed strength across training rounds, not responses to different doses.
 
 ## Results against the frozen predictions (validation only)
 

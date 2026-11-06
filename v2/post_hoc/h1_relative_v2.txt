@@ -1,0 +1,9 @@
+POST-HOC (2026-11-06) normalized H1 for v2: rel_drop = margin_drop / |margin_clean|; S_rel = rel_drop(r30) - rel_drop(r15)
+[fedavg] round 15: mean clean margin 5.263, mean relative drop -0.0378
+[fedavg] round 30: mean clean margin 6.324, mean relative drop -0.0270
+[fedavg] round 45: mean clean margin 7.664, mean relative drop -0.0165
+[fedavg] S_rel per seed: 76:+0.0115, 87:+0.0058, 98:+0.0012, 109:+0.0165, 120:+0.0192 | mean +0.0108 | negative 0/5
+[fedprox] round 15: mean clean margin 4.759, mean relative drop -0.0404
+[fedprox] round 30: mean clean margin 5.865, mean relative drop -0.0463
+[fedprox] round 45: mean clean margin 7.138, mean relative drop -0.0491
+[fedprox] S_rel per seed: 76:-0.0050, 87:-0.0055, 98:-0.0126, 109:-0.0041, 120:-0.0025 | mean -0.0059 | negative 5/5
