@@ -1,0 +1,18 @@
+{
+  "git_head": "8a22943a8a5c15d22fd423c4fc1e01aa0f5bf9a6",
+  "tag": "uav02-v2-confirmatory-freeze",
+  "file_sha256": {
+    "fl_pipeline_v2/algorithms.py": "b7f7bb5cb158da6a5d53a007ad16a30b4099c1dc3b98ea7532509203cc22d45b",
+    "fl_pipeline_v2/analyze_confirmatory_v2.py": "cb10f45ffc025786d27f78588eb3984d83c6fdee9050bad1c57731274a7c598a",
+    "fl_pipeline_v2/data.py": "cf16cbd73d5ff8ac13a064584c5023ec1a38ba11d908b6f1391c34ab4337bd29",
+    "fl_pipeline_v2/drift.py": "b3ca4265e282256e37a31a730505f384558240402f06992621b2b2009f552b9d",
+    "fl_pipeline_v2/model.py": "f55ba664e0fc2fa0a93a5fba2053dc8152abc492ea8d8005674cf3034e35a153",
+    "fl_pipeline_v2/run_drift_confirmatory_v2.py": "6e5654f02e498e2706c586f509c69ff4b28ddaa194626e7d30c30521aa07327f",
+    "data_audit/prepare_isot.py": "b123c4aaaa9b4554cadb9cad2e6ccc33ddd701523546d5ee1af2ec0f27d5c74e",
+    "data_audit/federated_clients_manifest.json": "134c94016d687dbde952cc7be9dceea80de38d444a5e89332b21c47e21b96fca"
+  },
+  "seed": 87,
+  "torch": "2.10.0",
+  "device": "mps",
+  "started_unix": 1793921320.0402381
+}

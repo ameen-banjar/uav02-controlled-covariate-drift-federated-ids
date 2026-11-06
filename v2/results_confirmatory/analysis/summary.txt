@@ -1,0 +1,242 @@
+Seeds analysed: [76, 87, 98, 109, 120] | present validation classes: ['DoS', 'Injection', 'Ip Spoofing', 'MITM', 'Manipulation', 'Regular', 'Replay', 'Unauth', 'Video']
+  sudden: exposure rounds 15-29, full-strength rounds 15-29 (n=15), recovery intervals [(30, 45)]
+  gradual: exposure rounds 11-34, full-strength rounds 20-25 (n=6), recovery intervals [(35, 45)]
+  recurring: exposure rounds 15-36, full-strength rounds 15-36 (n=14), recovery intervals [(22, 29), (37, 45)]
+
+====================================================================================================
+L1  PRIMARY -- controlled drift response (drifted minus clean, same model state, mean over full-strength rounds)
+====================================================================================================
+Negative = drift hurts. v2 gate (directional replication, NOT significance): macro-F1 negative in >=4/5 seeds. v2 prediction P-R: |mean Regular-recall response| < 0.005.
+
+[fedavg/sudden]
+  macro-F1        mean=-0.0254 sd=0.0075 range=[-0.0314,-0.0123] 95%tInt=[-0.0348,-0.0161] d_z=-3.37  negative in 5/5 seeds
+                  per-seed: 76:-0.0123, 87:-0.0314, 98:-0.0268, 109:-0.0288, 120:-0.0279
+  Regular recall  mean=+0.0001 sd=0.0002 range=[-0.0001,+0.0003] 95%tInt=[-0.0001,+0.0003] d_z=+0.90  negative in 1/5 seeds
+                  per-seed: 76:-0.0001, 87:+0.0001, 98:+0.0001, 109:+0.0003, 120:+0.0003
+  prediction P-R fedavg/sudden: |mean Regular-recall response| = 0.0001 -> HOLDS
+  PRIMARY gate fedavg/sudden: PASS
+  class-level recall response (mean over seeds): DoS:-0.000, Injection:-0.055, Ip Spoofing:+0.001, MITM:+0.008, Manipulation:+0.000, Regular:+0.000, Replay:+0.000, Unauth:+0.046, Video:-0.101
+
+[fedavg/gradual]
+  macro-F1        mean=-0.0250 sd=0.0092 range=[-0.0326,-0.0092] 95%tInt=[-0.0365,-0.0136] d_z=-2.71  negative in 5/5 seeds
+                  per-seed: 76:-0.0092, 87:-0.0326, 98:-0.0251, 109:-0.0287, 120:-0.0294
+  Regular recall  mean=+0.0002 sd=0.0002 range=[-0.0001,+0.0003] 95%tInt=[-0.0000,+0.0004] d_z=+0.96  negative in 1/5 seeds
+                  per-seed: 76:-0.0001, 87:+0.0002, 98:+0.0002, 109:+0.0003, 120:+0.0003
+  prediction P-R fedavg/gradual: |mean Regular-recall response| = 0.0002 -> HOLDS
+  PRIMARY gate fedavg/gradual: PASS
+  class-level recall response (mean over seeds): DoS:-0.000, Injection:-0.037, Ip Spoofing:+0.002, MITM:+0.007, Manipulation:+0.000, Regular:+0.000, Replay:+0.000, Unauth:+0.038, Video:-0.109
+
+[fedavg/recurring]
+  macro-F1        mean=-0.0314 sd=0.0098 range=[-0.0376,-0.0144] 95%tInt=[-0.0437,-0.0192] d_z=-3.19  negative in 5/5 seeds
+                  per-seed: 76:-0.0144, 87:-0.0374, 98:-0.0315, 109:-0.0363, 120:-0.0376
+  Regular recall  mean=+0.0002 sd=0.0002 range=[-0.0001,+0.0004] 95%tInt=[-0.0001,+0.0004] d_z=+0.76  negative in 1/5 seeds
+                  per-seed: 76:-0.0001, 87:+0.0001, 98:+0.0002, 109:+0.0002, 120:+0.0004
+  prediction P-R fedavg/recurring: |mean Regular-recall response| = 0.0002 -> HOLDS
+  PRIMARY gate fedavg/recurring: PASS
+  class-level recall response (mean over seeds): DoS:-0.000, Injection:-0.088, Ip Spoofing:+0.001, MITM:+0.006, Manipulation:+0.000, Regular:+0.000, Replay:+0.000, Unauth:+0.078, Video:-0.120
+
+[fedprox/sudden]
+  macro-F1        mean=-0.0279 sd=0.0055 range=[-0.0324,-0.0184] 95%tInt=[-0.0348,-0.0211] d_z=-5.06  negative in 5/5 seeds
+                  per-seed: 76:-0.0184, 87:-0.0324, 98:-0.0283, 109:-0.0301, 120:-0.0302
+  Regular recall  mean=-0.0002 sd=0.0001 range=[-0.0004,-0.0001] 95%tInt=[-0.0003,-0.0001] d_z=-1.76  negative in 5/5 seeds
+                  per-seed: 76:-0.0003, 87:-0.0004, 98:-0.0001, 109:-0.0002, 120:-0.0001
+  prediction P-R fedprox/sudden: |mean Regular-recall response| = 0.0002 -> HOLDS
+  PRIMARY gate fedprox/sudden: PASS
+  class-level recall response (mean over seeds): DoS:-0.000, Injection:-0.061, Ip Spoofing:-0.004, MITM:+0.023, Manipulation:+0.000, Regular:-0.000, Replay:+0.000, Unauth:+0.046, Video:-0.133
+
+[fedprox/gradual]
+  macro-F1        mean=-0.0302 sd=0.0065 range=[-0.0363,-0.0196] 95%tInt=[-0.0383,-0.0222] d_z=-4.65  negative in 5/5 seeds
+                  per-seed: 76:-0.0196, 87:-0.0363, 98:-0.0288, 109:-0.0334, 120:-0.0331
+  Regular recall  mean=-0.0002 sd=0.0001 range=[-0.0004,-0.0001] 95%tInt=[-0.0004,-0.0001] d_z=-1.68  negative in 5/5 seeds
+                  per-seed: 76:-0.0003, 87:-0.0004, 98:-0.0002, 109:-0.0001, 120:-0.0001
+  prediction P-R fedprox/gradual: |mean Regular-recall response| = 0.0002 -> HOLDS
+  PRIMARY gate fedprox/gradual: PASS
+  class-level recall response (mean over seeds): DoS:-0.000, Injection:-0.056, Ip Spoofing:-0.003, MITM:+0.023, Manipulation:+0.000, Regular:-0.000, Replay:+0.000, Unauth:+0.060, Video:-0.144
+
+[fedprox/recurring]
+  macro-F1        mean=-0.0301 sd=0.0030 range=[-0.0352,-0.0278] 95%tInt=[-0.0338,-0.0264] d_z=-10.06  negative in 5/5 seeds
+                  per-seed: 76:-0.0278, 87:-0.0281, 98:-0.0295, 109:-0.0298, 120:-0.0352
+  Regular recall  mean=-0.0001 sd=0.0001 range=[-0.0002,+0.0000] 95%tInt=[-0.0002,+0.0000] d_z=-0.81  negative in 4/5 seeds
+                  per-seed: 76:-0.0001, 87:-0.0002, 98:+0.0000, 109:-0.0000, 120:-0.0000
+  prediction P-R fedprox/recurring: |mean Regular-recall response| = 0.0001 -> HOLDS
+  PRIMARY gate fedprox/recurring: PASS
+  class-level recall response (mean over seeds): DoS:-0.000, Injection:-0.098, Ip Spoofing:-0.003, MITM:+0.025, Manipulation:+0.000, Regular:-0.000, Replay:+0.000, Unauth:+0.086, Video:-0.147
+
+====================================================================================================
+L2  SECONDARY -- training-history effect: schedule-trained CLEAN minus matched `none` CLEAN, mean over exposure rounds
+====================================================================================================
+
+[fedavg/sudden] exposure rounds 15-29
+  macro-F1        mean=+0.0025 sd=0.0010 range=[+0.0014,+0.0041] 95%tInt=[+0.0012,+0.0037] d_z=+2.46
+                  per-seed: 76:+0.0014, 87:+0.0024, 98:+0.0024, 109:+0.0041, 120:+0.0021
+  Regular recall  mean=+0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=+0.06
+                  per-seed: 76:-0.0001, 87:+0.0000, 98:+0.0001, 109:-0.0000, 120:+0.0000
+
+[fedavg/gradual] exposure rounds 11-34
+  macro-F1        mean=+0.0010 sd=0.0017 range=[-0.0012,+0.0034] 95%tInt=[-0.0011,+0.0030] d_z=+0.58
+                  per-seed: 76:-0.0012, 87:+0.0012, 98:+0.0002, 109:+0.0034, 120:+0.0013
+  Regular recall  mean=-0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.00
+                  per-seed: 76:-0.0001, 87:+0.0000, 98:+0.0001, 109:-0.0000, 120:-0.0000
+
+[fedavg/recurring] exposure rounds 15-36
+  macro-F1        mean=+0.0025 sd=0.0024 range=[+0.0008,+0.0066] 95%tInt=[-0.0006,+0.0055] d_z=+1.00
+                  per-seed: 76:+0.0010, 87:+0.0029, 98:+0.0010, 109:+0.0066, 120:+0.0008
+  Regular recall  mean=-0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.36
+                  per-seed: 76:-0.0001, 87:+0.0000, 98:+0.0001, 109:-0.0000, 120:-0.0000
+
+[fedprox/sudden] exposure rounds 15-29
+  macro-F1        mean=+0.0048 sd=0.0018 range=[+0.0028,+0.0077] 95%tInt=[+0.0025,+0.0071] d_z=+2.62
+                  per-seed: 76:+0.0041, 87:+0.0053, 98:+0.0041, 109:+0.0077, 120:+0.0028
+  Regular recall  mean=-0.0000 sd=0.0000 range=[-0.0001,+0.0000] 95%tInt=[-0.0001,+0.0000] d_z=-0.08
+                  per-seed: 76:-0.0000, 87:+0.0000, 98:+0.0000, 109:-0.0001, 120:-0.0000
+
+[fedprox/gradual] exposure rounds 11-34
+  macro-F1        mean=+0.0033 sd=0.0010 range=[+0.0019,+0.0046] 95%tInt=[+0.0021,+0.0045] d_z=+3.41
+                  per-seed: 76:+0.0031, 87:+0.0038, 98:+0.0032, 109:+0.0046, 120:+0.0019
+  Regular recall  mean=-0.0000 sd=0.0000 range=[-0.0001,+0.0000] 95%tInt=[-0.0001,+0.0000] d_z=-0.54
+                  per-seed: 76:-0.0001, 87:+0.0000, 98:+0.0000, 109:-0.0001, 120:-0.0000
+
+[fedprox/recurring] exposure rounds 15-36
+  macro-F1        mean=+0.0034 sd=0.0010 range=[+0.0026,+0.0052] 95%tInt=[+0.0022,+0.0047] d_z=+3.39
+                  per-seed: 76:+0.0034, 87:+0.0027, 98:+0.0034, 109:+0.0052, 120:+0.0026
+  Regular recall  mean=-0.0000 sd=0.0000 range=[-0.0001,+0.0000] 95%tInt=[-0.0001,+0.0000] d_z=-0.65
+                  per-seed: 76:-0.0001, 87:+0.0000, 98:+0.0000, 109:-0.0000, 120:-0.0000
+
+====================================================================================================
+L3  SECONDARY -- RecoveryGap_{m,r} = M^schedule_clean,r - M^none_clean,r, only inside strength==0 intervals after removal
+====================================================================================================
+Points per recovery interval [a,b]: immediate=a, +5=a+5 and +10=a+10 only if still inside the interval, residual=b (last clean round of the interval).
+
+[fedavg/sudden] macro-F1: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[30,45] immediate@r30 mean=+0.0022 sd=0.0046 range=[-0.0026,+0.0085] 95%tInt=[-0.0035,+0.0079] d_z=+0.48
+  interval[30,45] +5       @r35 mean=+0.0002 sd=0.0036 range=[-0.0031,+0.0055] 95%tInt=[-0.0043,+0.0047] d_z=+0.04
+  interval[30,45] +10      @r40 mean=+0.0012 sd=0.0050 range=[-0.0038,+0.0089] 95%tInt=[-0.0050,+0.0074] d_z=+0.24
+  interval[30,45] residual @r45 mean=-0.0004 sd=0.0026 range=[-0.0045,+0.0024] 95%tInt=[-0.0036,+0.0029] d_z=-0.14
+
+[fedavg/sudden] Regular recall: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[30,45] immediate@r30 mean=-0.0001 sd=0.0001 range=[-0.0002,+0.0000] 95%tInt=[-0.0002,+0.0000] d_z=-0.75
+  interval[30,45] +5       @r35 mean=+0.0000 sd=0.0002 range=[-0.0003,+0.0002] 95%tInt=[-0.0002,+0.0003] d_z=+0.05
+  interval[30,45] +10      @r40 mean=-0.0000 sd=0.0003 range=[-0.0005,+0.0002] 95%tInt=[-0.0004,+0.0003] d_z=-0.03
+  interval[30,45] residual @r45 mean=-0.0000 sd=0.0002 range=[-0.0002,+0.0002] 95%tInt=[-0.0002,+0.0002] d_z=-0.03
+
+[fedavg/gradual] macro-F1: pre-onset sanity max|gap| over rounds<11 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[35,45] immediate@r35 mean=+0.0021 sd=0.0065 range=[-0.0022,+0.0134] 95%tInt=[-0.0060,+0.0102] d_z=+0.32
+  interval[35,45] +5       @r40 mean=+0.0014 sd=0.0059 range=[-0.0047,+0.0109] 95%tInt=[-0.0059,+0.0087] d_z=+0.23
+  interval[35,45] +10      @r45 mean=+0.0011 sd=0.0072 range=[-0.0082,+0.0104] 95%tInt=[-0.0079,+0.0101] d_z=+0.15
+  interval[35,45] residual @r45 mean=+0.0011 sd=0.0072 range=[-0.0082,+0.0104] 95%tInt=[-0.0079,+0.0101] d_z=+0.15
+
+[fedavg/gradual] Regular recall: pre-onset sanity max|gap| over rounds<11 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[35,45] immediate@r35 mean=+0.0000 sd=0.0002 range=[-0.0004,+0.0002] 95%tInt=[-0.0003,+0.0003] d_z=+0.03
+  interval[35,45] +5       @r40 mean=-0.0000 sd=0.0003 range=[-0.0005,+0.0002] 95%tInt=[-0.0003,+0.0003] d_z=-0.08
+  interval[35,45] +10      @r45 mean=-0.0000 sd=0.0002 range=[-0.0002,+0.0002] 95%tInt=[-0.0002,+0.0002] d_z=-0.14
+  interval[35,45] residual @r45 mean=-0.0000 sd=0.0002 range=[-0.0002,+0.0002] 95%tInt=[-0.0002,+0.0002] d_z=-0.14
+
+[fedavg/recurring] macro-F1: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[22,29] immediate@r22 mean=+0.0021 sd=0.0014 range=[+0.0010,+0.0045] 95%tInt=[+0.0003,+0.0039] d_z=+1.44
+  interval[22,29] +5       @r27 mean=+0.0014 sd=0.0033 range=[-0.0030,+0.0054] 95%tInt=[-0.0027,+0.0055] d_z=+0.42
+  interval[22,29] residual @r29 mean=-0.0008 sd=0.0016 range=[-0.0028,+0.0016] 95%tInt=[-0.0028,+0.0012] d_z=-0.49
+  interval[37,45] immediate@r37 mean=+0.0008 sd=0.0008 range=[-0.0005,+0.0016] 95%tInt=[-0.0001,+0.0018] d_z=+1.06
+  interval[37,45] +5       @r42 mean=-0.0003 sd=0.0032 range=[-0.0050,+0.0031] 95%tInt=[-0.0042,+0.0037] d_z=-0.08
+  interval[37,45] residual @r45 mean=+0.0017 sd=0.0041 range=[-0.0024,+0.0077] 95%tInt=[-0.0033,+0.0068] d_z=+0.42
+
+[fedavg/recurring] Regular recall: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[22,29] immediate@r22 mean=+0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=+0.08
+  interval[22,29] +5       @r27 mean=+0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=+0.05
+  interval[22,29] residual @r29 mean=-0.0000 sd=0.0001 range=[-0.0002,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.07
+  interval[37,45] immediate@r37 mean=-0.0000 sd=0.0002 range=[-0.0004,+0.0001] 95%tInt=[-0.0003,+0.0002] d_z=-0.12
+  interval[37,45] +5       @r42 mean=-0.0000 sd=0.0002 range=[-0.0004,+0.0001] 95%tInt=[-0.0003,+0.0002] d_z=-0.24
+  interval[37,45] residual @r45 mean=-0.0000 sd=0.0002 range=[-0.0003,+0.0001] 95%tInt=[-0.0002,+0.0002] d_z=-0.06
+
+[fedprox/sudden] macro-F1: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[30,45] immediate@r30 mean=+0.0037 sd=0.0021 range=[+0.0017,+0.0069] 95%tInt=[+0.0011,+0.0063] d_z=+1.75
+  interval[30,45] +5       @r35 mean=+0.0004 sd=0.0013 range=[-0.0016,+0.0018] 95%tInt=[-0.0012,+0.0020] d_z=+0.34
+  interval[30,45] +10      @r40 mean=-0.0001 sd=0.0017 range=[-0.0020,+0.0016] 95%tInt=[-0.0021,+0.0020] d_z=-0.04
+  interval[30,45] residual @r45 mean=+0.0022 sd=0.0049 range=[-0.0041,+0.0091] 95%tInt=[-0.0039,+0.0083] d_z=+0.45
+
+[fedprox/sudden] Regular recall: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[30,45] immediate@r30 mean=-0.0001 sd=0.0001 range=[-0.0001,-0.0000] 95%tInt=[-0.0001,-0.0000] d_z=-1.46
+  interval[30,45] +5       @r35 mean=-0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.14
+  interval[30,45] +10      @r40 mean=-0.0000 sd=0.0000 range=[-0.0000,+0.0000] 95%tInt=[-0.0000,+0.0000] d_z=-0.18
+  interval[30,45] residual @r45 mean=-0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.04
+
+[fedprox/gradual] macro-F1: pre-onset sanity max|gap| over rounds<11 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[35,45] immediate@r35 mean=+0.0006 sd=0.0012 range=[-0.0004,+0.0027] 95%tInt=[-0.0009,+0.0021] d_z=+0.54
+  interval[35,45] +5       @r40 mean=+0.0007 sd=0.0023 range=[-0.0012,+0.0046] 95%tInt=[-0.0022,+0.0036] d_z=+0.31
+  interval[35,45] +10      @r45 mean=+0.0019 sd=0.0044 range=[-0.0023,+0.0093] 95%tInt=[-0.0035,+0.0074] d_z=+0.44
+  interval[35,45] residual @r45 mean=+0.0019 sd=0.0044 range=[-0.0023,+0.0093] 95%tInt=[-0.0035,+0.0074] d_z=+0.44
+
+[fedprox/gradual] Regular recall: pre-onset sanity max|gap| over rounds<11 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[35,45] immediate@r35 mean=-0.0000 sd=0.0001 range=[-0.0002,+0.0001] 95%tInt=[-0.0002,+0.0001] d_z=-0.17
+  interval[35,45] +5       @r40 mean=+0.0000 sd=0.0001 range=[-0.0000,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=+0.34
+  interval[35,45] +10      @r45 mean=-0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.11
+  interval[35,45] residual @r45 mean=-0.0000 sd=0.0001 range=[-0.0001,+0.0001] 95%tInt=[-0.0001,+0.0001] d_z=-0.11
+
+[fedprox/recurring] macro-F1: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[22,29] immediate@r22 mean=+0.0039 sd=0.0028 range=[+0.0012,+0.0085] 95%tInt=[+0.0005,+0.0074] d_z=+1.42
+  interval[22,29] +5       @r27 mean=+0.0015 sd=0.0022 range=[+0.0001,+0.0054] 95%tInt=[-0.0012,+0.0043] d_z=+0.69
+  interval[22,29] residual @r29 mean=+0.0010 sd=0.0011 range=[+0.0002,+0.0029] 95%tInt=[-0.0004,+0.0024] d_z=+0.89
+  interval[37,45] immediate@r37 mean=+0.0027 sd=0.0012 range=[+0.0010,+0.0039] 95%tInt=[+0.0012,+0.0042] d_z=+2.22
+  interval[37,45] +5       @r42 mean=+0.0013 sd=0.0020 range=[-0.0008,+0.0047] 95%tInt=[-0.0013,+0.0038] d_z=+0.62
+  interval[37,45] residual @r45 mean=+0.0009 sd=0.0032 range=[-0.0034,+0.0057] 95%tInt=[-0.0032,+0.0049] d_z=+0.27
+
+[fedprox/recurring] Regular recall: pre-onset sanity max|gap| over rounds<15 = 0.000000 (expected ~0; trajectories identical before onset)
+  interval[22,29] immediate@r22 mean=+0.0000 sd=0.0000 range=[-0.0001,+0.0000] 95%tInt=[-0.0001,+0.0001] d_z=+0.00
+  interval[22,29] +5       @r27 mean=-0.0000 sd=0.0000 range=[-0.0001,+0.0000] 95%tInt=[-0.0001,+0.0000] d_z=-0.31
+  interval[22,29] residual @r29 mean=-0.0000 sd=0.0000 range=[-0.0001,+0.0000] 95%tInt=[-0.0001,+0.0000] d_z=-0.51
+  interval[37,45] immediate@r37 mean=-0.0001 sd=0.0000 range=[-0.0001,-0.0000] 95%tInt=[-0.0001,-0.0000] d_z=-3.82
+  interval[37,45] +5       @r42 mean=+0.0000 sd=0.0001 range=[-0.0000,+0.0001] 95%tInt=[-0.0000,+0.0001] d_z=+0.58
+  interval[37,45] residual @r45 mean=+0.0000 sd=0.0001 range=[-0.0001,+0.0002] 95%tInt=[-0.0001,+0.0002] d_z=+0.49
+
+====================================================================================================
+L3c SECONDARY (v2) -- class-level clean-recall residual at the last round of each post-removal interval (schedule minus matched none)
+====================================================================================================
+[fedavg/sudden] r45: DoS:-0.0000(min -0.0001), Injection:-0.0076(min -0.0165), Ip Spoofing:+0.0000(min +0.0000), MITM:-0.0004(min -0.0028), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0002), Replay:+0.0000(min +0.0000), Unauth:+0.0064(min -0.0080), Video:+0.0027(min -0.0153)
+[fedavg/gradual] r45: DoS:+0.0000(min +0.0000), Injection:+0.0076(min -0.0319), Ip Spoofing:+0.0000(min +0.0000), MITM:-0.0009(min -0.0142), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0002), Replay:+0.0000(min +0.0000), Unauth:-0.0051(min -0.0388), Video:-0.0028(min -0.0356)
+[fedavg/recurring] r29: DoS:-0.0000(min -0.0001), Injection:-0.0090(min -0.0201), Ip Spoofing:+0.0002(min +0.0000), MITM:-0.0011(min -0.0039), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0002), Replay:+0.0000(min +0.0000), Unauth:+0.0102(min -0.0067), Video:+0.0025(min -0.0042)
+[fedavg/recurring] r45: DoS:-0.0000(min -0.0001), Injection:+0.0097(min -0.0177), Ip Spoofing:+0.0000(min +0.0000), MITM:+0.0012(min -0.0027), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0003), Replay:+0.0000(min +0.0000), Unauth:-0.0096(min -0.0482), Video:+0.0001(min -0.0159)
+[fedprox/sudden] r45: DoS:+0.0000(min +0.0000), Injection:+0.0314(min -0.0106), Ip Spoofing:+0.0000(min +0.0000), MITM:+0.0022(min -0.0021), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0001), Replay:+0.0000(min +0.0000), Unauth:-0.0278(min -0.0522), Video:-0.0019(min -0.0107)
+[fedprox/gradual] r45: DoS:+0.0000(min -0.0001), Injection:+0.0149(min -0.0272), Ip Spoofing:+0.0000(min +0.0000), MITM:+0.0031(min -0.0023), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0001), Replay:+0.0000(min +0.0000), Unauth:-0.0112(min -0.0428), Video:-0.0009(min -0.0103)
+[fedprox/recurring] r29: DoS:-0.0000(min -0.0001), Injection:-0.0024(min -0.0260), Ip Spoofing:+0.0000(min +0.0000), MITM:+0.0008(min -0.0006), Manipulation:+0.0000(min +0.0000), Regular:-0.0000(min -0.0001), Replay:+0.0000(min +0.0000), Unauth:+0.0008(min -0.0187), Video:+0.0032(min -0.0002)
+[fedprox/recurring] r45: DoS:-0.0000(min -0.0000), Injection:+0.0094(min +0.0000), Ip Spoofing:+0.0000(min +0.0000), MITM:+0.0011(min -0.0017), Manipulation:+0.0000(min +0.0000), Regular:+0.0000(min -0.0001), Replay:+0.0000(min +0.0000), Unauth:-0.0110(min -0.0388), Video:-0.0044(min -0.0161)
+
+====================================================================================================
+H1 (secondary, prospective; discovered in pilot) -- same perturbation (strength=1) hurts more at later training stages, WITHOUT drift exposure
+====================================================================================================
+`none` checkpoints, Regular-true validation rows, margin=logit[Regular]-logit[MITM]; drop = margin(strength=1) - margin(clean). Contrast S = drop(r30) - drop(r15); S<0 means larger collapse later. Gate: S<0 in >=4/5 seeds in EACH algorithm.
+
+[fedavg] drop@r15: mean=-0.1996 sd=0.0400 range=[-0.2289,-0.1311] 95%tInt=[-0.2492,-0.1500] d_z=-4.99
+[fedavg] drop@r30: mean=-0.1688 sd=0.0776 range=[-0.2360,-0.0468] 95%tInt=[-0.2651,-0.0725] d_z=-2.18
+[fedavg] S: mean=+0.0308 sd=0.0452 range=[-0.0184,+0.0843] 95%tInt=[-0.0254,+0.0869] d_z=+0.68  negative in 2/5 seeds
+  per-seed S: 76:+0.026, 87:-0.007, 98:-0.018, 109:+0.069, 120:+0.084
+  descriptive dose-response (mean drop by round): r5:-0.09, r10:-0.16, r15:-0.20, r20:-0.21, r25:-0.19, r30:-0.17, r35:-0.15, r40:-0.14, r45:-0.12
+
+[fedprox] drop@r15: mean=-0.1922 sd=0.0421 range=[-0.2262,-0.1210] 95%tInt=[-0.2445,-0.1399] d_z=-4.56
+[fedprox] drop@r30: mean=-0.2714 sd=0.0600 range=[-0.3234,-0.1687] 95%tInt=[-0.3458,-0.1969] d_z=-4.53
+[fedprox] S: mean=-0.0791 sd=0.0221 range=[-0.1009,-0.0476] 95%tInt=[-0.1066,-0.0517] d_z=-3.58  negative in 5/5 seeds
+  per-seed S: 76:-0.083, 87:-0.097, 98:-0.101, 109:-0.067, 120:-0.048
+  descriptive dose-response (mean drop by round): r5:-0.08, r10:-0.13, r15:-0.19, r20:-0.23, r25:-0.26, r30:-0.27, r35:-0.29, r40:-0.32, r45:-0.35
+H1 directional replication: FAIL
+
+====================================================================================================
+H2 (secondary, prospective; discovered in pilot) -- class-specific drift response toward MITM
+====================================================================================================
+Delta(c->MITM) = drifted rate - clean rate for true class c, averaged over ALL full-strength rounds pooled across sudden/gradual/recurring (rounds weighted equally). H2a: Delta(DoS)<0.01 AND max_c Delta>0.1. H2b: Delta(Regular)>=0.05 AND Delta(Video)>=0.05. Each: >=4/5 seeds, EACH algorithm.
+
+[fedavg] mean Delta(class->MITM) over seeds: DoS:+0.000, Injection:+0.072, Ip Spoofing:+0.000, Manipulation:+0.003, Regular:+0.000, Replay:+0.008, Unauth:+0.013, Video:-0.003
+  Regular ->MITM mean=+0.0002 sd=0.0000 range=[+0.0002,+0.0003] 95%tInt=[+0.0002,+0.0003] d_z=+5.05
+             per-seed: 76:+0.000, 87:+0.000, 98:+0.000, 109:+0.000, 120:+0.000
+  Video   ->MITM mean=-0.0026 sd=0.0347 range=[-0.0582,+0.0316] 95%tInt=[-0.0457,+0.0404] d_z=-0.08
+             per-seed: 76:-0.058, 87:+0.019, 98:+0.003, 109:-0.009, 120:+0.032
+  DoS     ->MITM mean=+0.0000 sd=0.0000 range=[+0.0000,+0.0000] 95%tInt=[-0.0000,+0.0000] d_z=+0.45
+             per-seed: 76:+0.000, 87:+0.000, 98:+0.000, 109:+0.000, 120:+0.000
+  H2a in 1/5 seeds | H2b in 0/5 seeds
+
+[fedprox] mean Delta(class->MITM) over seeds: DoS:-0.000, Injection:+0.071, Ip Spoofing:+0.000, Manipulation:+0.002, Regular:+0.001, Replay:+0.009, Unauth:+0.026, Video:+0.028
+  Regular ->MITM mean=+0.0007 sd=0.0001 range=[+0.0006,+0.0008] 95%tInt=[+0.0006,+0.0008] d_z=+8.18
+             per-seed: 76:+0.001, 87:+0.001, 98:+0.001, 109:+0.001, 120:+0.001
+  Video   ->MITM mean=+0.0283 sd=0.0309 range=[-0.0165,+0.0634] 95%tInt=[-0.0100,+0.0667] d_z=+0.92
+             per-seed: 76:-0.017, 87:+0.032, 98:+0.048, 109:+0.015, 120:+0.063
+  DoS     ->MITM mean=-0.0000 sd=0.0000 range=[-0.0000,+0.0000] 95%tInt=[-0.0000,+0.0000] d_z=-0.59
+             per-seed: 76:-0.000, 87:-0.000, 98:-0.000, 109:+0.000, 120:-0.000
+  H2a in 0/5 seeds | H2b in 0/5 seeds
+H2a: FAIL | H2b: FAIL

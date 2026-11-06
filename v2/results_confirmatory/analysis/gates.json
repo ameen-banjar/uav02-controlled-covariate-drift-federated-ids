@@ -1,0 +1,27 @@
+{
+  "partial": false,
+  "seeds": [
+    76,
+    87,
+    98,
+    109,
+    120
+  ],
+  "gates": {
+    "P_fedavg_sudden": true,
+    "PR_fedavg_sudden": true,
+    "P_fedavg_gradual": true,
+    "PR_fedavg_gradual": true,
+    "P_fedavg_recurring": true,
+    "PR_fedavg_recurring": true,
+    "P_fedprox_sudden": true,
+    "PR_fedprox_sudden": true,
+    "P_fedprox_gradual": true,
+    "PR_fedprox_gradual": true,
+    "P_fedprox_recurring": true,
+    "PR_fedprox_recurring": true,
+    "H1": false,
+    "H2a": false,
+    "H2b": false
+  }
+}
