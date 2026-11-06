@@ -1,0 +1,16 @@
+{
+ "train": {
+  "rows_before": 14420864,
+  "iat_negative_rows": 0,
+  "iat_negative_share": 0.0,
+  "ttl_above_255": 0,
+  "rows_after_cap": 1489775
+ },
+ "validation": {
+  "rows_before": 3090185,
+  "iat_negative_rows": 1,
+  "iat_negative_share": 3.2360522104663636e-07,
+  "ttl_above_255": 0,
+  "rows_after_cap": 205822
+ }
+}

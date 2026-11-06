@@ -1,0 +1,467 @@
+{
+ "held_out_test_sessions": [
+  "UDP_Flood_4_5_4_2mins.pcap",
+  "DoS_3_5_1_20mins.pcap",
+  "slowloris_5_1_15mins.pcap",
+  "UDP_Flood_1_5_4_2mins.pcap",
+  "UDP_Flood_5_5_4_7mins.pcap",
+  "Instruction_injection_6_5_14_10mins.pcap",
+  "Instruction_injection_4_5_13_6mins.pcap",
+  "IP_spoofing_3_5_17_3mins.pcap",
+  "IP_spoofing_2_5_17_6mins.pcap",
+  "mitm_station_mode_2_5_24.pcap",
+  "mitm_station_mode_4_5_24.pcap",
+  "manipulate_6_5_22_10mins.pcap",
+  "pwd_crack_deau_and_eqpol_1_5_6_30mins_raw.pcap",
+  "regular_51_5_24.pcap",
+  "regular_47_5_23.pcap",
+  "regular_26_5_21.pcap",
+  "regular_46_5_23.pcap",
+  "regular_8_5_19.pcap",
+  "regular_25_5_21.pcap",
+  "regular_15_5_20.pcap",
+  "regular_21_5_20.pcap",
+  "regular_17_5_20.pcap",
+  "regular_42_5_23.pcap",
+  "regular_54_5_25.pcap",
+  "replay_2_5_22_10mins.pcap",
+  "unauthen_4_5_16_6mins.pcap",
+  "unauthen_2_5_16_9mins.pcap",
+  "video_3_5_13_11mins.pcap"
+ ],
+ "validation_sessions": [
+  "UDP_Flood_3_5_4_3mins.pcap",
+  "slowloris_3_5_5_45mins.pcap",
+  "DoS_5_5_1_5mins.pcap",
+  "Instruction_injection_5_5_13_10mins.pcap",
+  "IP_spoofing_9_5_17_6mins.pcap",
+  "MITM_5_5_13_fly_8mins.pcap",
+  "mitm_station_mode_3_5_24.pcap",
+  "manipulate_1_5_22_10mins.pcap",
+  "regular_33_5_22.pcap",
+  "regular_52_5_25.pcap",
+  "regular_29_5_21.pcap",
+  "regular_5_5_19.pcap",
+  "regular_12_5_19.pcap",
+  "regular_28_5_21.pcap",
+  "regular_40_5_23.pcap",
+  "replay_3_5_22_10mins.pcap",
+  "unauthen_7_5_16_9mins.pcap",
+  "video_1_5_13_8mins.pcap"
+ ],
+ "validation_note": "For hyperparameter/round-count/threshold selection ONLY. Never used to pick D2Guard's server-side decision parameters as if it were a trusted root dataset, and never touches held_out_test_sessions.",
+ "n_clients": 15,
+ "dirichlet_alpha": 100.0,
+ "seed": 42,
+ "clients": {
+  "0": {
+   "sessions": [
+    "regular_45_5_23.pcap",
+    "DoS_4_5_1_5mins.pcap",
+    "MITM_2_5_3_fly_15mins.pcap",
+    "replay_1_5_22_10mins.pcap",
+    "regular_44_5_23.pcap"
+   ],
+   "n_sessions": 5,
+   "n_rows": 154826,
+   "fedavg_weight_by_rows": 0.07200800698751048,
+   "regular_row_share": 0.3121439551496519,
+   "row_counts_by_category": {
+    "DoS": 85378,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 20194,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 48328,
+    "Replay": 926,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "1": {
+   "sessions": [
+    "regular_2_5_19.pcap",
+    "DoS_3_5_1_10mins.pcap",
+    "Instruction_injection_2_5_13_7mins.pcap",
+    "manipulate_4_5_22_10mins.pcap",
+    "regular_20_5_20.pcap"
+   ],
+   "n_sessions": 5,
+   "n_rows": 197293,
+   "fedavg_weight_by_rows": 0.09175897925792117,
+   "regular_row_share": 0.2348588140481416,
+   "row_counts_by_category": {
+    "DoS": 149350,
+    "Injection": 607,
+    "Ip Spoofing": 0,
+    "MITM": 0,
+    "Manipulation": 1000,
+    "Password Cracking": 0,
+    "Regular": 46336,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "2": {
+   "sessions": [
+    "regular_19_5_20.pcap",
+    "mitm_station_mode_1_5_24.pcap",
+    "MITM_4_5_5_fly_12mins.pcap",
+    "regular_31_5_22.pcap"
+   ],
+   "n_sessions": 4,
+   "n_rows": 72118,
+   "fedavg_weight_by_rows": 0.03354135253720487,
+   "regular_row_share": 0.6890790094012591,
+   "row_counts_by_category": {
+    "DoS": 0,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 22423,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 49695,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "3": {
+   "sessions": [
+    "regular_36_5_23.pcap",
+    "UDP_Flood_7_5_4_10mins.pcap",
+    "Instruction_injection_7_5_14_7mins.pcap",
+    "IP_spoofing_4_5_17_1mins.pcap",
+    "manipulate_5_5_22_10mins.pcap",
+    "replay_5_5_22_10mins.pcap"
+   ],
+   "n_sessions": 6,
+   "n_rows": 168799,
+   "fedavg_weight_by_rows": 0.07850670799145351,
+   "regular_row_share": 0.1294853642497882,
+   "row_counts_by_category": {
+    "DoS": 144243,
+    "Injection": 524,
+    "Ip Spoofing": 193,
+    "MITM": 0,
+    "Manipulation": 994,
+    "Password Cracking": 0,
+    "Regular": 21857,
+    "Replay": 988,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "4": {
+   "sessions": [
+    "regular_34_5_23.pcap",
+    "MITM_4_5_13_fly_5mins.pcap",
+    "video_7_5_14_10mins.pcap",
+    "regular_27_5_21.pcap",
+    "regular_3_5_19.pcap"
+   ],
+   "n_sessions": 5,
+   "n_rows": 89566,
+   "fedavg_weight_by_rows": 0.04165624090167907,
+   "regular_row_share": 0.7887033025925017,
+   "row_counts_by_category": {
+    "DoS": 0,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 9458,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 70641,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 9467
+   }
+  },
+  "5": {
+   "sessions": [
+    "regular_38_5_23.pcap",
+    "slowloris_5_1_mul_launch.pcap",
+    "IP_spoofing_10_5_17_3mins.pcap",
+    "MITM_1_5_3_fly_10mins.pcap",
+    "replay_4_5_22_10mins.pcap",
+    "unauthen_8_5_16_3mins.pcap",
+    "unauthen_1_5_16_8mins.pcap"
+   ],
+   "n_sessions": 7,
+   "n_rows": 46338,
+   "fedavg_weight_by_rows": 0.021551335226559238,
+   "regular_row_share": 0.5413483534032544,
+   "row_counts_by_category": {
+    "DoS": 349,
+    "Injection": 0,
+    "Ip Spoofing": 514,
+    "MITM": 18669,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 25085,
+    "Replay": 888,
+    "Unauth": 833,
+    "Video": 0
+   }
+  },
+  "6": {
+   "sessions": [
+    "regular_22_5_21.pcap",
+    "Dos_1_4_30_20mins.pcap",
+    "Instruction_injection_1_5_13_5mins.pcap",
+    "regular_7_5_19.pcap",
+    "regular_1_5_19.pcap"
+   ],
+   "n_sessions": 5,
+   "n_rows": 96812,
+   "fedavg_weight_by_rows": 0.045026282229566505,
+   "regular_row_share": 0.768995579060447,
+   "row_counts_by_category": {
+    "DoS": 21968,
+    "Injection": 396,
+    "Ip Spoofing": 0,
+    "MITM": 0,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 74448,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "7": {
+   "sessions": [
+    "regular_49_5_24.pcap",
+    "IP_spoofing_6_5_17_10mins.pcap",
+    "MITM_3_5_13_fly_10mins.pcap"
+   ],
+   "n_sessions": 3,
+   "n_rows": 38222,
+   "fedavg_weight_by_rows": 0.0177766656961791,
+   "regular_row_share": 0.5526921668149234,
+   "row_counts_by_category": {
+    "DoS": 0,
+    "Injection": 0,
+    "Ip Spoofing": 1699,
+    "MITM": 15398,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 21125,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "8": {
+   "sessions": [
+    "regular_39_5_23.pcap",
+    "UDP_Flood_6_5_4_8mins.pcap",
+    "pwd_crack_deau_and_eqpol_2_5_6_45mins_raw.pcap",
+    "unauthen_3_5_16_6mins.pcap",
+    "regular_4_5_19.pcap"
+   ],
+   "n_sessions": 5,
+   "n_rows": 297143,
+   "fedavg_weight_by_rows": 0.13819820456699666,
+   "regular_row_share": 0.1535388684909286,
+   "row_counts_by_category": {
+    "DoS": 108849,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 0,
+    "Manipulation": 0,
+    "Password Cracking": 142165,
+    "Regular": 45623,
+    "Replay": 0,
+    "Unauth": 506,
+    "Video": 0
+   }
+  },
+  "9": {
+   "sessions": [
+    "regular_53_5_25.pcap",
+    "hulk_5_1.pcap",
+    "UDP_Flood_2_5_4_2mins.pcap",
+    "unauthen_5_5_16_10mins.pcap",
+    "regular_16_1_5_20.pcap",
+    "regular_48_5_23.pcap",
+    "regular_43_5_23.pcap",
+    "regular_16_2_5_20.pcap",
+    "regular_23_5_21.pcap"
+   ],
+   "n_sessions": 9,
+   "n_rows": 159230,
+   "fedavg_weight_by_rows": 0.07405626285392178,
+   "regular_row_share": 0.7241914212145952,
+   "row_counts_by_category": {
+    "DoS": 43119,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 0,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 115313,
+    "Replay": 0,
+    "Unauth": 798,
+    "Video": 0
+   }
+  },
+  "10": {
+   "sessions": [
+    "regular_14_5_20.pcap",
+    "slowhttptest_5_1_15mins.pcap",
+    "UDP_Flood_8_5_4_15mins.pcap",
+    "UDP_Flood_10_5_4_4mins.pcap",
+    "IP_spoofing_5_5_17_8mins.pcap",
+    "IP_spoofing_7_5_17_10mins.pcap",
+    "mitm_station_mode_5_5_24.pcap",
+    "unauthen_6_5_16_10mins.pcap",
+    "video_6_5_14_5mins.pcap",
+    "regular_24_5_21.pcap",
+    "regular_50_5_24.pcap"
+   ],
+   "n_sessions": 11,
+   "n_rows": 334041,
+   "fedavg_weight_by_rows": 0.1553590912515662,
+   "regular_row_share": 0.21414137785481424,
+   "row_counts_by_category": {
+    "DoS": 249222,
+    "Injection": 0,
+    "Ip Spoofing": 2813,
+    "MITM": 1277,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 71532,
+    "Replay": 0,
+    "Unauth": 788,
+    "Video": 8409
+   }
+  },
+  "11": {
+   "sessions": [
+    "regular_6_5_19.pcap",
+    "DoS_2_5_1_20mins.pcap",
+    "mitm_station_mode_6_5_24.pcap",
+    "replay_6_5_22_10mins.pcap",
+    "video_2_5_13_8mins.pcap",
+    "video_5_5_14_10mins.pcap",
+    "video_4_5_14_8mins.pcap",
+    "regular_10_5_19.pcap",
+    "regular_11_5_19.pcap"
+   ],
+   "n_sessions": 9,
+   "n_rows": 130937,
+   "fedavg_weight_by_rows": 0.06089747465492656,
+   "regular_row_share": 0.560628393807709,
+   "row_counts_by_category": {
+    "DoS": 18638,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 1428,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 73407,
+    "Replay": 901,
+    "Unauth": 0,
+    "Video": 36563
+   }
+  },
+  "12": {
+   "sessions": [
+    "regular_9_5_19.pcap",
+    "slowhttptest_2_5_5_45mins.pcap",
+    "Instruction_injection_8_5_14_4mins.pcap",
+    "IP_spoofing_8_5_17_8mins.pcap",
+    "manipulate_3_5_22_10mins.pcap",
+    "regular_32_5_22.pcap",
+    "regular_30_5_21.pcap"
+   ],
+   "n_sessions": 7,
+   "n_rows": 84194,
+   "fedavg_weight_by_rows": 0.03915777802375865,
+   "regular_row_share": 0.8507850915742214,
+   "row_counts_by_category": {
+    "DoS": 9739,
+    "Injection": 359,
+    "Ip Spoofing": 1401,
+    "MITM": 0,
+    "Manipulation": 1064,
+    "Password Cracking": 0,
+    "Regular": 71631,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "13": {
+   "sessions": [
+    "regular_13_5_20.pcap",
+    "hulk2_5_5_30mins.pcap",
+    "UDP_Flood_9_5_4_9mins.pcap",
+    "Instruction_injection_3_5_13_10mins.pcap",
+    "IP_spoofing_1_5_17_5mins.pcap",
+    "manipulate_2_5_22_10mins.pcap",
+    "regular_41_5_23.pcap"
+   ],
+   "n_sessions": 7,
+   "n_rows": 208560,
+   "fedavg_weight_by_rows": 0.09699914702514555,
+   "regular_row_share": 0.22153337169159953,
+   "row_counts_by_category": {
+    "DoS": 159719,
+    "Injection": 699,
+    "Ip Spoofing": 882,
+    "MITM": 0,
+    "Manipulation": 1057,
+    "Password Cracking": 0,
+    "Regular": 46203,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  },
+  "14": {
+   "sessions": [
+    "regular_37_5_23.pcap",
+    "regular_18_5_20.pcap",
+    "regular_35_5_23.pcap"
+   ],
+   "n_sessions": 3,
+   "n_rows": 72043,
+   "fedavg_weight_by_rows": 0.03350647079561067,
+   "regular_row_share": 1.0,
+   "row_counts_by_category": {
+    "DoS": 0,
+    "Injection": 0,
+    "Ip Spoofing": 0,
+    "MITM": 0,
+    "Manipulation": 0,
+    "Password Cracking": 0,
+    "Regular": 72043,
+    "Replay": 0,
+    "Unauth": 0,
+    "Video": 0
+   }
+  }
+ },
+ "exposure_order": [
+  14,
+  12,
+  4,
+  6,
+  9,
+  2,
+  11,
+  7,
+  5,
+  0,
+  1,
+  13,
+  10,
+  8,
+  3
+ ],
+ "partition_description": "v3 re-partition of the 91 frozen training-pool sessions, alpha=100.0"
+}

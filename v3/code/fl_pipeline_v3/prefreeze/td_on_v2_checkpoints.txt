@@ -1,0 +1,8 @@
+L1 fedavg sudden: td -0.0189 (neg 5/5) | v2 -0.0258 (neg 5/5) | td_time_only -0.0075 (neg 4/5) | td_rate_only -0.0127 (neg 5/5)
+L1 fedavg gradual: td -0.0181 (neg 5/5) | v2 -0.0250 (neg 5/5) | td_time_only -0.0056 (neg 4/5) | td_rate_only -0.0140 (neg 5/5)
+L1 fedavg recurring: td -0.0237 (neg 5/5) | v2 -0.0326 (neg 5/5) | td_time_only -0.0106 (neg 4/5) | td_rate_only -0.0140 (neg 5/5)
+H1 fedavg: td S +0.0376 (neg 0/5) | v2 S +0.0308 (neg 2/5)
+L1 fedprox sudden: td -0.0198 (neg 5/5) | v2 -0.0262 (neg 5/5) | td_time_only -0.0064 (neg 5/5) | td_rate_only -0.0148 (neg 5/5)
+L1 fedprox gradual: td -0.0212 (neg 5/5) | v2 -0.0278 (neg 5/5) | td_time_only -0.0065 (neg 5/5) | td_rate_only -0.0164 (neg 5/5)
+L1 fedprox recurring: td -0.0239 (neg 5/5) | v2 -0.0303 (neg 5/5) | td_time_only -0.0104 (neg 5/5) | td_rate_only -0.0144 (neg 5/5)
+H1 fedprox: td S -0.0281 (neg 4/5) | v2 S -0.0791 (neg 5/5)
