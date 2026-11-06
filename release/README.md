@@ -1,5 +1,7 @@
 # UAV-02 reproducibility package
 
+> **Release 2.0.0 (2026-11-06).** The manuscript's confirmatory results now come from the corrected v2 campaign; see `v2/README.md`. The v1 material below is unchanged and is reported in the manuscript as the audited first campaign.
+
 **Controlled Temporal Covariate Drift in Federated UAV Intrusion Detection: Separating Immediate Response, Training History, and Post-Removal Residuals.** Ameen Banjar, University of Jeddah (abanjar@uj.edu.sa, ORCID 0000-0002-0871-5153).
 
 This repository lets a reader:
@@ -15,7 +17,11 @@ This repository lets a reader:
 |---|---|---|---|
 | tag `uav02-confirmatory-freeze-v1` (commit `0a201c8`) | 2026-09-25 01:21 +03:00 | Frozen design (`DESIGN_FROZEN.md`, in Arabic), the eight frozen source files under `code/`, `SHA256SUMS`, the partition manifest | **frozen before any confirmatory execution; never edited** |
 | tag `uav02-confirmatory-results-v1` (commit `7ac37fa`) | 2026-09-25 12:54 +03:00 | Confirmatory outputs: 40 round CSVs with confusion matrices, 10 H1 margin CSVs, 480 checkpoints, provenance, logs, frozen analysis, plus the post-hoc displays of the same day | adds files only; no frozen file changed |
-| tag `uav02-release-v1.0.0` (this release) | 2026-10-21 | `post_hoc/posthoc_heldout_test*.py` and `post_hoc/heldout_test/` (held-out-test evaluation, first read 2026-10-19), `release/` (these tools), `LICENSE`, `CITATION.cff` | **post-hoc** analyses and new wrapper code; no frozen file changed |
+| tag `uav02-release-v1.0.0` | 2026-10-21 | `post_hoc/posthoc_heldout_test*.py` and `post_hoc/heldout_test/` (held-out-test evaluation, first read 2026-10-19), `release/` (these tools), `LICENSE`, `CITATION.cff` | **post-hoc** analyses and new wrapper code; no frozen file changed |
+| commit `06cfc4f` | 2026-11-06 | `post_hoc/review_2026-11-06/`: Duration (= IP TTL) ablation on the frozen v1 checkpoints | **post-hoc**; no frozen file changed |
+| tag `uav02-v2-confirmatory-freeze` (commit `8a22943`) | 2026-11-06 | `v2/DESIGN_V2.md`, `v2/SHA256SUMS_v2`, `v2/code/`: corrected protocol (Duration removed, physical-range guard, fresh seeds 76/87/98/109/120, validation only) | **frozen and pushed before any v2 execution; never edited** |
+| tag `uav02-v2-results` (commit `361805e`) | 2026-11-06 | `v2/results_confirmatory/`, `v2/logs/`: 40 v2 runs, checkpoints, frozen v2 analysis (run once) | adds files only |
+| tag `uav02-release-v2.0.0` | 2026-11-06 | `v2/post_hoc/` (figures, pooled H2 table), `v2/release_tools/`, `v2/README.md` | post-hoc display and wrapper code; the manuscript's confirmatory results are v2 |
 
 `release/OUTPUTS_STATUS.md` labels every output as confirmatory or post-hoc. The root `README.md` is the frozen one from 2026-09-25 and still describes the run as pending; it is left unchanged on purpose.
 
