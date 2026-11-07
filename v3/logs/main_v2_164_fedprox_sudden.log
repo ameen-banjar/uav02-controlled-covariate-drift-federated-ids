@@ -1,0 +1,17 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[main_v2__164__fedprox__sudden] r1 s=0.00 clean=0.2215 t=50s
+[main_v2__164__fedprox__sudden] r5 s=0.00 clean=0.2887 t=148s
+[main_v2__164__fedprox__sudden] r10 s=0.00 clean=0.3167 t=265s
+[main_v2__164__fedprox__sudden] r14 s=0.00 clean=0.3412 t=382s
+[main_v2__164__fedprox__sudden] r15 s=1.00 clean=0.3460 v2=0.3379 td=0.3372 t=443s
+[main_v2__164__fedprox__sudden] r20 s=1.00 clean=0.3857 v2=0.3613 td=0.3668 t=612s
+[main_v2__164__fedprox__sudden] r25 s=1.00 clean=0.3976 v2=0.3733 td=0.3772 t=746s
+[main_v2__164__fedprox__sudden] r29 s=1.00 clean=0.4123 v2=0.3800 td=0.3888 t=859s
+[main_v2__164__fedprox__sudden] r30 s=0.00 clean=0.4120 t=897s
+[main_v2__164__fedprox__sudden] r35 s=0.00 clean=0.4202 t=1015s
+[main_v2__164__fedprox__sudden] r40 s=0.00 clean=0.4474 t=1132s
+[main_v2__164__fedprox__sudden] r45 s=0.00 clean=0.4464 t=1248s
+[done] main_v2__164__fedprox__sudden 1248s

@@ -1,0 +1,21 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[main_td__208__fedprox__recurring] r1 s=0.00 clean=0.2500 t=38s
+[main_td__208__fedprox__recurring] r5 s=0.00 clean=0.3155 t=125s
+[main_td__208__fedprox__recurring] r10 s=0.00 clean=0.3513 t=228s
+[main_td__208__fedprox__recurring] r14 s=0.00 clean=0.3592 t=313s
+[main_td__208__fedprox__recurring] r15 s=1.00 clean=0.3669 td=0.3553 v2=0.3578 t=349s
+[main_td__208__fedprox__recurring] r20 s=1.00 clean=0.3791 td=0.3713 v2=0.3699 t=469s
+[main_td__208__fedprox__recurring] r21 s=1.00 clean=0.3793 td=0.3707 v2=0.3690 t=505s
+[main_td__208__fedprox__recurring] r22 s=0.00 clean=0.3812 t=538s
+[main_td__208__fedprox__recurring] r25 s=0.00 clean=0.4063 t=608s
+[main_td__208__fedprox__recurring] r29 s=0.00 clean=0.4220 t=694s
+[main_td__208__fedprox__recurring] r30 s=1.00 clean=0.4364 td=0.3941 v2=0.3907 t=730s
+[main_td__208__fedprox__recurring] r35 s=1.00 clean=0.4494 td=0.4291 v2=0.4462 t=852s
+[main_td__208__fedprox__recurring] r36 s=1.00 clean=0.4509 td=0.4116 v2=0.4126 t=889s
+[main_td__208__fedprox__recurring] r37 s=0.00 clean=0.4548 t=923s
+[main_td__208__fedprox__recurring] r40 s=0.00 clean=0.4531 t=993s
+[main_td__208__fedprox__recurring] r45 s=0.00 clean=0.4504 t=1099s
+[done] main_td__208__fedprox__recurring 1099s

@@ -1,0 +1,17 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[algo_scaffold__131__scaffold__sudden] r1 s=0.00 clean=0.2742 t=31s
+[algo_scaffold__131__scaffold__sudden] r5 s=0.00 clean=0.3852 t=108s
+[algo_scaffold__131__scaffold__sudden] r10 s=0.00 clean=0.4535 t=201s
+[algo_scaffold__131__scaffold__sudden] r14 s=0.00 clean=0.4869 t=279s
+[algo_scaffold__131__scaffold__sudden] r15 s=1.00 clean=0.5066 td=0.4941 t=306s
+[algo_scaffold__131__scaffold__sudden] r20 s=1.00 clean=0.4758 td=0.4515 t=410s
+[algo_scaffold__131__scaffold__sudden] r25 s=1.00 clean=0.5049 td=0.5202 t=514s
+[algo_scaffold__131__scaffold__sudden] r29 s=1.00 clean=0.5020 td=0.4736 t=598s
+[algo_scaffold__131__scaffold__sudden] r30 s=0.00 clean=0.4853 t=624s
+[algo_scaffold__131__scaffold__sudden] r35 s=0.00 clean=0.5333 t=716s
+[algo_scaffold__131__scaffold__sudden] r40 s=0.00 clean=0.5088 t=809s
+[algo_scaffold__131__scaffold__sudden] r45 s=0.00 clean=0.5455 t=901s
+[done] algo_scaffold__131__scaffold__sudden 901s

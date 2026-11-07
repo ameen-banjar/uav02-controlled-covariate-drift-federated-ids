@@ -1,0 +1,15 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[arch_wide__153__fedprox__none] r1 s=0.00 clean=0.2096 t=33s
+[arch_wide__153__fedprox__none] r5 s=0.00 clean=0.2805 t=120s
+[arch_wide__153__fedprox__none] r10 s=0.00 clean=0.3633 t=227s
+[arch_wide__153__fedprox__none] r15 s=0.00 clean=0.3957 t=333s
+[arch_wide__153__fedprox__none] r20 s=0.00 clean=0.4023 t=439s
+[arch_wide__153__fedprox__none] r25 s=0.00 clean=0.4359 t=545s
+[arch_wide__153__fedprox__none] r30 s=0.00 clean=0.4599 t=649s
+[arch_wide__153__fedprox__none] r35 s=0.00 clean=0.4662 t=754s
+[arch_wide__153__fedprox__none] r40 s=0.00 clean=0.4549 t=859s
+[arch_wide__153__fedprox__none] r45 s=0.00 clean=0.5118 t=964s
+[done] arch_wide__153__fedprox__none 964s

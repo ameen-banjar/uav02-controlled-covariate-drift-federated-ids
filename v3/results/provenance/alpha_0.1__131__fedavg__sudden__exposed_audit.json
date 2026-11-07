@@ -1,0 +1,92 @@
+{
+ "exposed": [
+  6,
+  14,
+  1,
+  9,
+  0
+ ],
+ "exposed_row_share": 0.16283494611003468,
+ "audit": {
+  "6": {
+   "rows": 121747,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0,
+   "Srate_negative_share": 0.0,
+   "Srate_nan_share": 0.0,
+   "Drate_negative_share": 0.0,
+   "Drate_nan_share": 0.0,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 9.03513022908162e-05,
+   "flow_active_time_negative_share": 0.0,
+   "flow_active_time_nan_share": 0.0,
+   "std_duration_negative_share": 0.0,
+   "std_duration_nan_share": 0.0,
+   "rows_with_80211_packets_share": 0.0
+  },
+  "14": {
+   "rows": 24858,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0,
+   "Srate_negative_share": 0.0,
+   "Srate_nan_share": 0.0,
+   "Drate_negative_share": 0.0,
+   "Drate_nan_share": 0.0,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 0.0,
+   "flow_active_time_negative_share": 0.0,
+   "flow_active_time_nan_share": 0.0,
+   "std_duration_negative_share": 0.0,
+   "std_duration_nan_share": 0.0,
+   "rows_with_80211_packets_share": 0.0
+  },
+  "1": {
+   "rows": 48568,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0,
+   "Srate_negative_share": 0.0,
+   "Srate_nan_share": 0.0,
+   "Drate_negative_share": 0.0,
+   "Drate_nan_share": 0.0,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 4.1179377367814196e-05,
+   "flow_active_time_negative_share": 0.0,
+   "flow_active_time_nan_share": 0.0,
+   "std_duration_negative_share": 0.0,
+   "std_duration_nan_share": 0.0,
+   "rows_with_80211_packets_share": 0.0
+  },
+  "9": {
+   "rows": 28903,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0,
+   "Srate_negative_share": 0.0,
+   "Srate_nan_share": 0.0,
+   "Drate_negative_share": 0.0,
+   "Drate_nan_share": 0.0,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 6.919696917275024e-05,
+   "flow_active_time_negative_share": 0.0,
+   "flow_active_time_nan_share": 0.0,
+   "std_duration_negative_share": 0.0,
+   "std_duration_nan_share": 0.0,
+   "rows_with_80211_packets_share": 0.0
+  },
+  "0": {
+   "rows": 126039,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0,
+   "Srate_negative_share": 0.0,
+   "Srate_nan_share": 0.0,
+   "Drate_negative_share": 0.0,
+   "Drate_nan_share": 0.0,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 4.760431295075334e-05,
+   "flow_active_time_negative_share": 0.0,
+   "flow_active_time_nan_share": 0.0,
+   "std_duration_negative_share": 0.0,
+   "std_duration_nan_share": 0.0,
+   "rows_with_80211_packets_share": 0.0
+  }
+ }
+}

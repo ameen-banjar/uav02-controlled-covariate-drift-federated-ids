@@ -1,0 +1,47 @@
+{
+ "exposed": [
+  0,
+  2,
+  4,
+  3,
+  1
+ ],
+ "exposed_row_share": 0.35534359215317746,
+ "audit": {
+  "0": {
+   "rows": 80747,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 0.0,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0
+  },
+  "2": {
+   "rows": 81506,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 0.0,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0
+  },
+  "4": {
+   "rows": 97918,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 0.0,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0
+  },
+  "3": {
+   "rows": 169295,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 0.0,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0
+  },
+  "1": {
+   "rows": 99916,
+   "IAT_negative_share": 0.0,
+   "IAT_nan_share": 0.0,
+   "Rate_negative_share": 0.0,
+   "Rate_nan_share": 0.0
+  }
+ }
+}

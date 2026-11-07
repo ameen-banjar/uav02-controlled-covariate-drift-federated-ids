@@ -1,0 +1,17 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[algo_fedadam__142__fedadam__sudden] r1 s=0.00 clean=0.0121 t=34s
+[algo_fedadam__142__fedadam__sudden] r5 s=0.00 clean=0.0864 t=118s
+[algo_fedadam__142__fedadam__sudden] r10 s=0.00 clean=0.2478 t=229s
+[algo_fedadam__142__fedadam__sudden] r14 s=0.00 clean=0.2896 t=316s
+[algo_fedadam__142__fedadam__sudden] r15 s=1.00 clean=0.3278 td=0.3073 t=348s
+[algo_fedadam__142__fedadam__sudden] r20 s=1.00 clean=0.3297 td=0.3127 t=462s
+[algo_fedadam__142__fedadam__sudden] r25 s=1.00 clean=0.3697 td=0.3671 t=575s
+[algo_fedadam__142__fedadam__sudden] r29 s=1.00 clean=0.3899 td=0.3830 t=668s
+[algo_fedadam__142__fedadam__sudden] r30 s=0.00 clean=0.3717 t=697s
+[algo_fedadam__142__fedadam__sudden] r35 s=0.00 clean=0.4667 t=801s
+[algo_fedadam__142__fedadam__sudden] r40 s=0.00 clean=0.4568 t=903s
+[algo_fedadam__142__fedadam__sudden] r45 s=0.00 clean=0.4726 t=1005s
+[done] algo_fedadam__142__fedadam__sudden 1005s

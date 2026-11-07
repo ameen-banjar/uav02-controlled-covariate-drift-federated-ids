@@ -1,0 +1,13 @@
+[cic__142__fedprox__sudden] r1 s=0.00 clean=0.2043 t=22s
+[cic__142__fedprox__sudden] r5 s=0.00 clean=0.4120 t=76s
+[cic__142__fedprox__sudden] r10 s=0.00 clean=0.4536 t=144s
+[cic__142__fedprox__sudden] r14 s=0.00 clean=0.4661 t=200s
+[cic__142__fedprox__sudden] r15 s=1.00 clean=0.4717 td=0.4685 t=221s
+[cic__142__fedprox__sudden] r20 s=1.00 clean=0.4813 td=0.4756 t=294s
+[cic__142__fedprox__sudden] r25 s=1.00 clean=0.4894 td=0.4823 t=367s
+[cic__142__fedprox__sudden] r29 s=1.00 clean=0.4962 td=0.4870 t=429s
+[cic__142__fedprox__sudden] r30 s=0.00 clean=0.4926 t=449s
+[cic__142__fedprox__sudden] r35 s=0.00 clean=0.4983 t=527s
+[cic__142__fedprox__sudden] r40 s=0.00 clean=0.4987 t=605s
+[cic__142__fedprox__sudden] r45 s=0.00 clean=0.5004 t=683s
+[done] cic__142__fedprox__sudden 683s

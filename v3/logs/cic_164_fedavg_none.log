@@ -1,0 +1,11 @@
+[cic__164__fedavg__none] r1 s=0.00 clean=0.1480 t=22s
+[cic__164__fedavg__none] r5 s=0.00 clean=0.4030 t=84s
+[cic__164__fedavg__none] r10 s=0.00 clean=0.4525 t=157s
+[cic__164__fedavg__none] r15 s=0.00 clean=0.4776 t=222s
+[cic__164__fedavg__none] r20 s=0.00 clean=0.4856 t=286s
+[cic__164__fedavg__none] r25 s=0.00 clean=0.4850 t=349s
+[cic__164__fedavg__none] r30 s=0.00 clean=0.4902 t=422s
+[cic__164__fedavg__none] r35 s=0.00 clean=0.4921 t=493s
+[cic__164__fedavg__none] r40 s=0.00 clean=0.4906 t=557s
+[cic__164__fedavg__none] r45 s=0.00 clean=0.4959 t=621s
+[done] cic__164__fedavg__none 621s

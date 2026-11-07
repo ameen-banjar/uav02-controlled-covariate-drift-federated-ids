@@ -1,0 +1,15 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[algo_scaffold__142__scaffold__none] r1 s=0.00 clean=0.2592 t=29s
+[algo_scaffold__142__scaffold__none] r5 s=0.00 clean=0.3332 t=105s
+[algo_scaffold__142__scaffold__none] r10 s=0.00 clean=0.4632 t=197s
+[algo_scaffold__142__scaffold__none] r15 s=0.00 clean=0.5054 t=290s
+[algo_scaffold__142__scaffold__none] r20 s=0.00 clean=0.4908 t=385s
+[algo_scaffold__142__scaffold__none] r25 s=0.00 clean=0.5072 t=478s
+[algo_scaffold__142__scaffold__none] r30 s=0.00 clean=0.5139 t=569s
+[algo_scaffold__142__scaffold__none] r35 s=0.00 clean=0.5129 t=660s
+[algo_scaffold__142__scaffold__none] r40 s=0.00 clean=0.4938 t=750s
+[algo_scaffold__142__scaffold__none] r45 s=0.00 clean=0.5536 t=842s
+[done] algo_scaffold__142__scaffold__none 842s

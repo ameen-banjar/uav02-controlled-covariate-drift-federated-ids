@@ -1,0 +1,8 @@
+{
+ "git_head": "d5124d1cf9d03d5923aa39a5affa2d44ee79ee27",
+ "tag": "uav02-v3-freeze",
+ "job": "arch_wide|164|fedprox|none",
+ "torch": "2.10.0",
+ "device": "mps",
+ "started_unix": 1794043463.513262
+}

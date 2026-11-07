@@ -1,0 +1,21 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[main_v2__186__fedprox__recurring] r1 s=0.00 clean=0.2164 t=38s
+[main_v2__186__fedprox__recurring] r5 s=0.00 clean=0.2997 t=122s
+[main_v2__186__fedprox__recurring] r10 s=0.00 clean=0.3153 t=225s
+[main_v2__186__fedprox__recurring] r14 s=0.00 clean=0.3432 t=311s
+[main_v2__186__fedprox__recurring] r15 s=1.00 clean=0.3517 v2=0.3460 td=0.3458 t=347s
+[main_v2__186__fedprox__recurring] r20 s=1.00 clean=0.3821 v2=0.3645 td=0.3688 t=464s
+[main_v2__186__fedprox__recurring] r21 s=1.00 clean=0.3955 v2=0.3715 td=0.3746 t=499s
+[main_v2__186__fedprox__recurring] r22 s=0.00 clean=0.3922 t=531s
+[main_v2__186__fedprox__recurring] r25 s=0.00 clean=0.4037 t=598s
+[main_v2__186__fedprox__recurring] r29 s=0.00 clean=0.4277 t=683s
+[main_v2__186__fedprox__recurring] r30 s=1.00 clean=0.4225 v2=0.3885 td=0.3998 t=718s
+[main_v2__186__fedprox__recurring] r35 s=1.00 clean=0.4388 v2=0.3959 td=0.4071 t=837s
+[main_v2__186__fedprox__recurring] r36 s=1.00 clean=0.4481 v2=0.4011 td=0.4124 t=873s
+[main_v2__186__fedprox__recurring] r37 s=0.00 clean=0.4346 t=907s
+[main_v2__186__fedprox__recurring] r40 s=0.00 clean=0.4381 t=974s
+[main_v2__186__fedprox__recurring] r45 s=0.00 clean=0.4540 t=1077s
+[done] main_v2__186__fedprox__recurring 1077s

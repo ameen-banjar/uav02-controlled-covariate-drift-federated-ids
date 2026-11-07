@@ -1,0 +1,17 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[algo_fednova__131__fednova__sudden] r1 s=0.00 clean=0.2109 t=31s
+[algo_fednova__131__fednova__sudden] r5 s=0.00 clean=0.3719 t=109s
+[algo_fednova__131__fednova__sudden] r10 s=0.00 clean=0.4460 t=203s
+[algo_fednova__131__fednova__sudden] r14 s=0.00 clean=0.4652 t=279s
+[algo_fednova__131__fednova__sudden] r15 s=1.00 clean=0.4453 td=0.4414 t=307s
+[algo_fednova__131__fednova__sudden] r20 s=1.00 clean=0.5476 td=0.5245 t=409s
+[algo_fednova__131__fednova__sudden] r25 s=1.00 clean=0.4810 td=0.4486 t=511s
+[algo_fednova__131__fednova__sudden] r29 s=1.00 clean=0.4990 td=0.4507 t=595s
+[algo_fednova__131__fednova__sudden] r30 s=0.00 clean=0.5527 t=622s
+[algo_fednova__131__fednova__sudden] r35 s=0.00 clean=0.4726 t=716s
+[algo_fednova__131__fednova__sudden] r40 s=0.00 clean=0.5284 t=810s
+[algo_fednova__131__fednova__sudden] r45 s=0.00 clean=0.5393 t=903s
+[done] algo_fednova__131__fednova__sudden 903s

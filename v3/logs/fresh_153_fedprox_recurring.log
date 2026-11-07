@@ -1,0 +1,21 @@
+Fitted scaler + 56 feature columns on 79 TRAINING-pool sessions (2014311 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.095, 'Injection': 2.157, 'Ip Spoofing': 1.182, 'MITM': 0.354, 'Manipulation': 1.696, 'Password Cracking': 0.248, 'Regular': 0.108, 'Replay': 1.77, 'Unauth': 1.955, 'Video': 0.437}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3305, 'Injection': 0.0145, 'Ip Spoofing': 0.0265, 'MITM': 0.0884, 'Manipulation': 0.0184, 'Password Cracking': 0.1258, 'Regular': 0.2907, 'Replay': 0.0177, 'Unauth': 0.016, 'Video': 0.0716}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[fresh__153__fedprox__recurring] r1 s=0.00 clean=0.2259 t=36s
+[fresh__153__fedprox__recurring] r5 s=0.00 clean=0.3058 t=124s
+[fresh__153__fedprox__recurring] r10 s=0.00 clean=0.3084 t=236s
+[fresh__153__fedprox__recurring] r14 s=0.00 clean=0.3091 t=339s
+[fresh__153__fedprox__recurring] r15 s=1.00 clean=0.3094 td=0.3088 t=380s
+[fresh__153__fedprox__recurring] r20 s=1.00 clean=0.3102 td=0.3091 t=522s
+[fresh__153__fedprox__recurring] r21 s=1.00 clean=0.3108 td=0.3091 t=557s
+[fresh__153__fedprox__recurring] r22 s=0.00 clean=0.3115 t=599s
+[fresh__153__fedprox__recurring] r25 s=0.00 clean=0.3107 t=674s
+[fresh__153__fedprox__recurring] r29 s=0.00 clean=0.3105 t=759s
+[fresh__153__fedprox__recurring] r30 s=1.00 clean=0.3104 td=0.3095 t=798s
+[fresh__153__fedprox__recurring] r35 s=1.00 clean=0.3102 td=0.3097 t=932s
+[fresh__153__fedprox__recurring] r36 s=1.00 clean=0.3103 td=0.3097 t=966s
+[fresh__153__fedprox__recurring] r37 s=0.00 clean=0.3105 t=1000s
+[fresh__153__fedprox__recurring] r40 s=0.00 clean=0.3105 t=1077s
+[fresh__153__fedprox__recurring] r45 s=0.00 clean=0.3109 t=1188s
+[done] fresh__153__fedprox__recurring 1188s

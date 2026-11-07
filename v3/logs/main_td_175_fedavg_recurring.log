@@ -1,0 +1,21 @@
+Fitted scaler + 56 feature columns on 91 TRAINING-pool sessions (2150122 rows). Validation and test untouched.
+Class weights (sqrt-damped, mean-normalized): {'DoS': 0.107, 'Injection': 2.09, 'Ip Spoofing': 1.227, 'MITM': 0.357, 'Manipulation': 1.657, 'Password Cracking': 0.282, 'Regular': 0.115, 'Replay': 1.746, 'Unauth': 1.965, 'Video': 0.455}
+  -> effective row share after sqrt-damped weighting: {'DoS': 0.3166, 'Injection': 0.0162, 'Ip Spoofing': 0.0275, 'MITM': 0.0948, 'Manipulation': 0.0204, 'Password Cracking': 0.1199, 'Regular': 0.2938, 'Replay': 0.0194, 'Unauth': 0.0172, 'Video': 0.0742}
+  -> effective row share after FULL balanced weighting: {'DoS': 0.1, 'Injection': 0.1, 'Ip Spoofing': 0.1, 'MITM': 0.1, 'Manipulation': 0.1, 'Password Cracking': 0.1, 'Regular': 0.1, 'Replay': 0.1, 'Unauth': 0.1, 'Video': 0.1}
+[main_td__175__fedavg__recurring] r1 s=0.00 clean=0.2140 t=36s
+[main_td__175__fedavg__recurring] r5 s=0.00 clean=0.2918 t=120s
+[main_td__175__fedavg__recurring] r10 s=0.00 clean=0.3315 t=219s
+[main_td__175__fedavg__recurring] r14 s=0.00 clean=0.3641 t=302s
+[main_td__175__fedavg__recurring] r15 s=1.00 clean=0.3718 td=0.3545 v2=0.3492 t=338s
+[main_td__175__fedavg__recurring] r20 s=1.00 clean=0.3858 td=0.3693 v2=0.3636 t=454s
+[main_td__175__fedavg__recurring] r21 s=1.00 clean=0.3878 td=0.3736 v2=0.3684 t=489s
+[main_td__175__fedavg__recurring] r22 s=0.00 clean=0.3905 t=522s
+[main_td__175__fedavg__recurring] r25 s=0.00 clean=0.3955 t=588s
+[main_td__175__fedavg__recurring] r29 s=0.00 clean=0.4072 t=672s
+[main_td__175__fedavg__recurring] r30 s=1.00 clean=0.4111 td=0.3897 v2=0.3785 t=707s
+[main_td__175__fedavg__recurring] r35 s=1.00 clean=0.4374 td=0.3984 v2=0.3866 t=826s
+[main_td__175__fedavg__recurring] r36 s=1.00 clean=0.4318 td=0.3961 v2=0.3844 t=863s
+[main_td__175__fedavg__recurring] r37 s=0.00 clean=0.4226 t=895s
+[main_td__175__fedavg__recurring] r40 s=0.00 clean=0.4253 t=961s
+[main_td__175__fedavg__recurring] r45 s=0.00 clean=0.4504 t=1061s
+[done] main_td__175__fedavg__recurring 1061s

@@ -1,0 +1,13 @@
+[cic__153__fedavg__sudden] r1 s=0.00 clean=0.1686 t=25s
+[cic__153__fedavg__sudden] r5 s=0.00 clean=0.4160 t=91s
+[cic__153__fedavg__sudden] r10 s=0.00 clean=0.4477 t=181s
+[cic__153__fedavg__sudden] r14 s=0.00 clean=0.4612 t=264s
+[cic__153__fedavg__sudden] r15 s=1.00 clean=0.4661 td=0.4635 t=289s
+[cic__153__fedavg__sudden] r20 s=1.00 clean=0.4792 td=0.4729 t=369s
+[cic__153__fedavg__sudden] r25 s=1.00 clean=0.4880 td=0.4821 t=452s
+[cic__153__fedavg__sudden] r29 s=1.00 clean=0.4924 td=0.4873 t=515s
+[cic__153__fedavg__sudden] r30 s=0.00 clean=0.4922 t=536s
+[cic__153__fedavg__sudden] r35 s=0.00 clean=0.4952 t=611s
+[cic__153__fedavg__sudden] r40 s=0.00 clean=0.4993 t=683s
+[cic__153__fedavg__sudden] r45 s=0.00 clean=0.5035 t=758s
+[done] cic__153__fedavg__sudden 758s
