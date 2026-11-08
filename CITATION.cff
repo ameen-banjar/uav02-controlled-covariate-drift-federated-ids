@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, protocol, or derived results, please cite this software and the associated paper once published."
 type: software
-title: "Reproducibility Package: Controlled Covariate Drift in Federated UAV Intrusion Detection, with a Feature-Validity Audit (UAV-02)"
+title: "Reproducibility Package: Synthetic Covariate Drift in Federated UAV Intrusion Detection, Three Frozen Campaigns (UAV-02)"
 authors:
   - family-names: Banjar
     given-names: Ameen
@@ -10,18 +10,20 @@ authors:
     orcid: "https://orcid.org/0000-0002-0871-5153"
 license: MIT
 repository-code: "https://github.com/ameen-banjar/uav02-controlled-covariate-drift-federated-ids"
-version: "2.0.1"
-date-released: "2026-11-06"
+version: "3.0.0"
+date-released: "2026-11-08"
 keywords:
   - federated learning
   - intrusion detection
   - UAV security
   - covariate drift
+  - time dilation
+  - equivalence testing
   - distribution shift
   - reproducibility
 preferred-citation:
   type: article
-  title: "Controlled Covariate Drift in Federated UAV Intrusion Detection: Immediate Response, Training History, Post-Removal Residuals, and a Feature-Validity Audit"
+  title: "Does the Drift Effect Depend on How Drift Is Built? Frozen Comparisons of Synthetic Covariate Drift in Federated UAV Intrusion Detection"
   authors:
     - family-names: Banjar
       given-names: Ameen
