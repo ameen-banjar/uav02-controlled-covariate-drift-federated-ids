@@ -10,3 +10,7 @@ Written 2026-11-08, after `analyze_v3.py` had been run once (timestamp in `../re
 - `make_figures_v3.py` → `figures/`: Figures 2–6 of the manuscript.
 
 To run them, place these files in `code/fl_pipeline_v3/post_hoc/` next to the frozen code, with `results_v3/` present.
+
+## Correction (2026-11-08, after release v3.0.0)
+
+In section A of `posthoc_v3.txt` as released in v3.0.0, the count of seeds with a negative paired value (td lowered macro-F1 more than v2) was printed under the label `td-less-negative(pos)`. The script now prints it as `neg k/10`, followed by `pos k/10`. The only lines that changed are those labels and a two-line key; all numbers and `posthoc_v3.json` are unchanged. To see the original output, check out the tag `uav02-release-v3.0.0`.

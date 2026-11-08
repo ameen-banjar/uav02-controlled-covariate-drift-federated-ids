@@ -37,6 +37,8 @@ def main():
     res = {}
     out("POST-HOC (not frozen). Seeds 131..230 (10 per combination).")
     out("\nA. same-checkpoint swap L1(td) - L1(v2), macro-F1, validation")
+    out("   neg k/10 = seeds where td lowered macro-F1 more than v2; pos k/10 = seeds where it lowered it less")
+    out("   (2026-11-08 fix: v3.0.0 printed the neg count under the label td-less-negative(pos))")
     for arm in ("main_td", "main_v2"):
         for algo in ("fedavg", "fedprox"):
             for s in A.SCH:
@@ -45,7 +47,7 @@ def main():
                      for k in R.SEEDS10]
                 S = A.summ(v)
                 res[f"A_{arm}_{algo}_{s}"] = S
-                out(f"  {arm:8} {algo:7} {s:9} " + A.fmt(S).replace("neg", "td-less-negative(pos)") + f" pos {S['pos']}/10")
+                out(f"  {arm:8} {algo:7} {s:9} " + A.fmt(S) + f" pos {S['pos']}/10")
     out("\nB. arm vs arm: L1 main_td(td) - L1 main_v2(v2), macro-F1, validation")
     for algo in ("fedavg", "fedprox"):
         for s in A.SCH:

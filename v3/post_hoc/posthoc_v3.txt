@@ -1,18 +1,20 @@
 POST-HOC (not frozen). Seeds 131..230 (10 per combination).
 
 A. same-checkpoint swap L1(td) - L1(v2), macro-F1, validation
-  main_td  fedavg  sudden    mean=+0.0040 sd=0.0025 range=[-0.0007,+0.0072] 95%t=[+0.0022,+0.0058] d_z=+1.61 td-less-negative(pos) 1/10 pos 9/10
-  main_td  fedavg  gradual   mean=+0.0035 sd=0.0042 range=[-0.0048,+0.0098] 95%t=[+0.0005,+0.0065] d_z=+0.82 td-less-negative(pos) 2/10 pos 8/10
-  main_td  fedavg  recurring mean=+0.0051 sd=0.0035 range=[-0.0019,+0.0089] 95%t=[+0.0026,+0.0075] d_z=+1.46 td-less-negative(pos) 1/10 pos 9/10
-  main_td  fedprox sudden    mean=+0.0051 sd=0.0030 range=[-0.0004,+0.0086] 95%t=[+0.0030,+0.0073] d_z=+1.73 td-less-negative(pos) 1/10 pos 9/10
-  main_td  fedprox gradual   mean=+0.0047 sd=0.0043 range=[-0.0050,+0.0087] 95%t=[+0.0017,+0.0078] d_z=+1.10 td-less-negative(pos) 1/10 pos 9/10
-  main_td  fedprox recurring mean=+0.0059 sd=0.0033 range=[-0.0015,+0.0094] 95%t=[+0.0036,+0.0082] d_z=+1.81 td-less-negative(pos) 1/10 pos 9/10
-  main_v2  fedavg  sudden    mean=+0.0046 sd=0.0029 range=[-0.0007,+0.0088] 95%t=[+0.0025,+0.0067] d_z=+1.57 td-less-negative(pos) 1/10 pos 9/10
-  main_v2  fedavg  gradual   mean=+0.0044 sd=0.0044 range=[-0.0031,+0.0121] 95%t=[+0.0012,+0.0075] d_z=+0.98 td-less-negative(pos) 2/10 pos 8/10
-  main_v2  fedavg  recurring mean=+0.0056 sd=0.0036 range=[-0.0003,+0.0096] 95%t=[+0.0030,+0.0082] d_z=+1.55 td-less-negative(pos) 1/10 pos 9/10
-  main_v2  fedprox sudden    mean=+0.0058 sd=0.0026 range=[+0.0016,+0.0086] 95%t=[+0.0039,+0.0076] d_z=+2.20 td-less-negative(pos) 0/10 pos 10/10
-  main_v2  fedprox gradual   mean=+0.0048 sd=0.0046 range=[-0.0062,+0.0092] 95%t=[+0.0015,+0.0081] d_z=+1.04 td-less-negative(pos) 1/10 pos 9/10
-  main_v2  fedprox recurring mean=+0.0065 sd=0.0028 range=[+0.0002,+0.0096] 95%t=[+0.0045,+0.0085] d_z=+2.34 td-less-negative(pos) 0/10 pos 10/10
+   neg k/10 = seeds where td lowered macro-F1 more than v2; pos k/10 = seeds where it lowered it less
+   (2026-11-08 fix: v3.0.0 printed the neg count under the label td-less-negative(pos))
+  main_td  fedavg  sudden    mean=+0.0040 sd=0.0025 range=[-0.0007,+0.0072] 95%t=[+0.0022,+0.0058] d_z=+1.61 neg 1/10 pos 9/10
+  main_td  fedavg  gradual   mean=+0.0035 sd=0.0042 range=[-0.0048,+0.0098] 95%t=[+0.0005,+0.0065] d_z=+0.82 neg 2/10 pos 8/10
+  main_td  fedavg  recurring mean=+0.0051 sd=0.0035 range=[-0.0019,+0.0089] 95%t=[+0.0026,+0.0075] d_z=+1.46 neg 1/10 pos 9/10
+  main_td  fedprox sudden    mean=+0.0051 sd=0.0030 range=[-0.0004,+0.0086] 95%t=[+0.0030,+0.0073] d_z=+1.73 neg 1/10 pos 9/10
+  main_td  fedprox gradual   mean=+0.0047 sd=0.0043 range=[-0.0050,+0.0087] 95%t=[+0.0017,+0.0078] d_z=+1.10 neg 1/10 pos 9/10
+  main_td  fedprox recurring mean=+0.0059 sd=0.0033 range=[-0.0015,+0.0094] 95%t=[+0.0036,+0.0082] d_z=+1.81 neg 1/10 pos 9/10
+  main_v2  fedavg  sudden    mean=+0.0046 sd=0.0029 range=[-0.0007,+0.0088] 95%t=[+0.0025,+0.0067] d_z=+1.57 neg 1/10 pos 9/10
+  main_v2  fedavg  gradual   mean=+0.0044 sd=0.0044 range=[-0.0031,+0.0121] 95%t=[+0.0012,+0.0075] d_z=+0.98 neg 2/10 pos 8/10
+  main_v2  fedavg  recurring mean=+0.0056 sd=0.0036 range=[-0.0003,+0.0096] 95%t=[+0.0030,+0.0082] d_z=+1.55 neg 1/10 pos 9/10
+  main_v2  fedprox sudden    mean=+0.0058 sd=0.0026 range=[+0.0016,+0.0086] 95%t=[+0.0039,+0.0076] d_z=+2.20 neg 0/10 pos 10/10
+  main_v2  fedprox gradual   mean=+0.0048 sd=0.0046 range=[-0.0062,+0.0092] 95%t=[+0.0015,+0.0081] d_z=+1.04 neg 1/10 pos 9/10
+  main_v2  fedprox recurring mean=+0.0065 sd=0.0028 range=[+0.0002,+0.0096] 95%t=[+0.0045,+0.0085] d_z=+2.34 neg 0/10 pos 10/10
 
 B. arm vs arm: L1 main_td(td) - L1 main_v2(v2), macro-F1, validation
   fedavg  sudden    mean=+0.0038 sd=0.0029 range=[-0.0012,+0.0088] 95%t=[+0.0017,+0.0059] d_z=+1.30 neg 1/10 pos 9/10
