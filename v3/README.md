@@ -12,6 +12,7 @@
 | Results | tag `uav02-v3-results` (commit `8b2fc39`) | `results/` (round, probe and H1 CSVs, provenance, `analysis/` from one run of the frozen `analyze_v3.py`), `logs/`, `addendum/` |
 | Post hoc | commit `a70c862` | `post_hoc/` (paired td−v2 comparisons, clean performance levels, Figures 2–6), `evidence/` |
 | Release | tag `uav02-release-v3.0.0` | this README, `CITATION.cff` |
+| Correction release | tag `uav02-release-v3.0.1` (sign-label fix in commit `8e570cb`) | corrected post-hoc label; this README's corrections section |
 
 The runner refused to start unless every file in `SHA256SUMS_v3` matched, the repository was clean, and HEAD carried the freeze tag. All 27 hashes were verified again after the campaign.
 
@@ -40,3 +41,12 @@ The runner refused to start unless every file in `SHA256SUMS_v3` matched, the re
 | 11 | Fresh-session L1 gate | holds (−0.0034 to −0.0043) |
 
 Items 5, 9 and 12 are descriptive or audits. Full output: `results/analysis/summary.txt` and `gates.json` (309 gates).
+
+## Corrections after v3.0.0 (release v3.0.1, 2026-11-08)
+
+No result, frozen file, seed or number changed.
+
+1. **Post-hoc sign label (commit `8e570cb`).** In section A of `post_hoc/posthoc_v3.txt`, v3.0.0 printed the count of negative seeds (td lowered macro-F1 more than v2) under the label `td-less-negative(pos)`. It is now printed as `neg k/10`, followed by `pos k/10`. `posthoc_v3.json` is byte-identical.
+2. **802.11 field descriptions.** We checked the ISOT extractor at isot-lab commit `783e9bf` again. The dated addendum (A2–A3) describes two fields imprecisely; it is kept unchanged as a dated record.
+   - On 802.11 packets, `Rate` is not the raw radiotap PHY rate. `Communication_features.py` returns the payload rate derived from it, PHY rate × payload size / packet size. This value has no timing term, so leaving it unchanged under time dilation remains consistent.
+   - On 802.11 packets, `Feature_extraction.py` initializes `wifi_dur` to 0 and never updates it, so the extractor writes 0 to `Duration`; the column is not a frame-duration field. This explains the zeros reported in A3, and the 255 argument for IP rows is unaffected.
