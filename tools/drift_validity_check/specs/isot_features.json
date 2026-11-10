@@ -1,0 +1,71 @@
+{
+  "dataset": "ISOT Drone Anomaly Detection Dataset",
+  "extractor": "isot-lab/Drone-Anomaly-Detection-Dataset-and-Unsupervised-Machine-Learning, commit 783e9bf, feature_extraction/",
+  "row": "mean over a consecutive slice of 10 packets (Feature_extraction.py, summary loop)",
+  "row_type": {"column": "Protocol Type", "ip_max": 17.0,
+               "note": "IP protocol codes are at most 17; the extractor writes 802.11 for Wi-Fi packets"},
+  "features": {
+    "Duration": {
+      "holds": "IP time-to-live on IP packets; 0 on 802.11 packets",
+      "source": "Connectivity_features.py, Connectivity_features_time.duration() returns packet.ttl",
+      "name_matches_meaning": false,
+      "timing_role": "none",
+      "domains": [{"rows": "ip", "min": 0, "max": 255}]
+    },
+    "IAT": {
+      "holds": "time since the previous packet, seconds",
+      "source": "Feature_extraction.py, IAT = time_interval (IP) or ts - previous_11_time (802.11)",
+      "name_matches_meaning": true,
+      "timing_role": "time",
+      "domains": [{"rows": "all", "min": 0}]
+    },
+    "flow_active_time": {
+      "holds": "last minus first timestamp of the packet's flow, seconds",
+      "source": "Supporting_functions.py, get_flow_info()",
+      "name_matches_meaning": true,
+      "timing_role": "time",
+      "domains": [{"rows": "all", "min": 0}]
+    },
+    "std_duration": {
+      "holds": "standard deviation of the flow's packet timestamps, seconds",
+      "source": "Supporting_functions.py, get_flow_info(), np.std(duration)",
+      "name_matches_meaning": true,
+      "timing_role": "time",
+      "domains": [{"rows": "all", "min": 0}]
+    },
+    "Srate": {
+      "holds": "source-to-destination packets of the flow divided by the flow duration",
+      "source": "Feature_extraction.py, srate = src_to_dst_pkt / flow_duration",
+      "name_matches_meaning": true,
+      "timing_role": "rate",
+      "domains": [{"rows": "all", "min": 0}]
+    },
+    "Drate": {
+      "holds": "destination-to-source packets of the flow divided by the flow duration",
+      "source": "Feature_extraction.py, drate = dst_to_src_pkt / flow_duration",
+      "name_matches_meaning": true,
+      "timing_role": "rate",
+      "domains": [{"rows": "all", "min": 0}]
+    },
+    "Rate": {
+      "holds": "IP packets: payload bits divided by the inter-packet interval, Mb/s. 802.11 packets: radiotap PHY rate x payload size / packet size, no timing term",
+      "source": "Connectivity_features.py get_data_rate(); Communication_features.py calculate_packet_size()",
+      "name_matches_meaning": true,
+      "timing_role": "rate",
+      "timing_rows": ["ip"],
+      "domains": [{"rows": "all", "min": 0}]
+    },
+    "Entropy": {
+      "holds": "Shannon entropy of the payload bytes, bits",
+      "source": "Supporting_functions.py, calculate_entropy()",
+      "name_matches_meaning": true,
+      "timing_role": "none",
+      "domains": [{"rows": "all", "min": 0, "max": 8}]
+    }
+  },
+  "relations": [
+    {"rate": "Srate", "time": "flow_active_time", "rows": "all", "tied_by": "Srate = packets / flow duration"},
+    {"rate": "Drate", "time": "flow_active_time", "rows": "all", "tied_by": "Drate = packets / flow duration"},
+    {"rate": "Rate", "time": "IAT", "rows": "ip", "tied_by": "Rate = payload bits / inter-packet interval"}
+  ]
+}

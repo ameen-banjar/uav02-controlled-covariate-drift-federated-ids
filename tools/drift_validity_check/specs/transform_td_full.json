@@ -1,0 +1,41 @@
+{
+  "name": "td (time dilation), s = 1",
+  "description": "Time-dilation transform at full strength (s = 1, c = 1.6): times x 1.6, time-derived rates / 1.6, IP-row Rate only.",
+  "intent": {
+    "kind": "retime",
+    "factor": 1.6
+  },
+  "operations": [
+    {
+      "feature": "IAT",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "flow_active_time",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "std_duration",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "Srate",
+      "op": "mul",
+      "value": 0.625
+    },
+    {
+      "feature": "Drate",
+      "op": "mul",
+      "value": 0.625
+    },
+    {
+      "feature": "Rate",
+      "op": "mul",
+      "value": 0.625,
+      "rows": "ip"
+    }
+  ]
+}

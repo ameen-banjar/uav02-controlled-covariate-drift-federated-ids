@@ -1,0 +1,46 @@
+{
+  "name": "v1 (first campaign), s = 1",
+  "description": "First-campaign transform at full strength (s = 1): rates x 0.4, times and `Duration` x 1.6, Entropy - 0.5 floored at the 5th percentile of the untransformed Entropy. Stated intent: slower traffic timing.",
+  "intent": {
+    "kind": "retime",
+    "factor": 1.6
+  },
+  "operations": [
+    {
+      "feature": "Rate",
+      "op": "mul",
+      "value": 0.4
+    },
+    {
+      "feature": "Srate",
+      "op": "mul",
+      "value": 0.4
+    },
+    {
+      "feature": "Drate",
+      "op": "mul",
+      "value": 0.4
+    },
+    {
+      "feature": "IAT",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "flow_active_time",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "Duration",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "Entropy",
+      "op": "add",
+      "value": -0.5,
+      "floor_raw_quantile": 0.05
+    }
+  ]
+}

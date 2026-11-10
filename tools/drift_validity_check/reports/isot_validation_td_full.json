@@ -1,0 +1,190 @@
+{
+  "transform": "td (time dilation), s = 1",
+  "rows": 245526,
+  "meaning": [
+    {
+      "feature": "IAT",
+      "holds": "time since the previous packet, seconds",
+      "source": "Feature_extraction.py, IAT = time_interval (IP) or ts - previous_11_time (802.11)",
+      "flag": false,
+      "note": ""
+    },
+    {
+      "feature": "flow_active_time",
+      "holds": "last minus first timestamp of the packet's flow, seconds",
+      "source": "Supporting_functions.py, get_flow_info()",
+      "flag": false,
+      "note": ""
+    },
+    {
+      "feature": "std_duration",
+      "holds": "standard deviation of the flow's packet timestamps, seconds",
+      "source": "Supporting_functions.py, get_flow_info(), np.std(duration)",
+      "flag": false,
+      "note": ""
+    },
+    {
+      "feature": "Srate",
+      "holds": "source-to-destination packets of the flow divided by the flow duration",
+      "source": "Feature_extraction.py, srate = src_to_dst_pkt / flow_duration",
+      "flag": false,
+      "note": ""
+    },
+    {
+      "feature": "Drate",
+      "holds": "destination-to-source packets of the flow divided by the flow duration",
+      "source": "Feature_extraction.py, drate = dst_to_src_pkt / flow_duration",
+      "flag": false,
+      "note": ""
+    },
+    {
+      "feature": "Rate",
+      "holds": "IP packets: payload bits divided by the inter-packet interval, Mb/s. 802.11 packets: radiotap PHY rate x payload size / packet size, no timing term",
+      "source": "Connectivity_features.py get_data_rate(); Communication_features.py calculate_packet_size()",
+      "flag": false,
+      "note": ""
+    }
+  ],
+  "range": [
+    {
+      "feature": "IAT",
+      "rows": "all",
+      "min": 0,
+      "max": null,
+      "applicable_rows": 245526,
+      "rows_leaving_domain": 0,
+      "share_of_all_rows": 0.0,
+      "share_of_applicable_rows": 0.0
+    },
+    {
+      "feature": "flow_active_time",
+      "rows": "all",
+      "min": 0,
+      "max": null,
+      "applicable_rows": 245526,
+      "rows_leaving_domain": 0,
+      "share_of_all_rows": 0.0,
+      "share_of_applicable_rows": 0.0
+    },
+    {
+      "feature": "std_duration",
+      "rows": "all",
+      "min": 0,
+      "max": null,
+      "applicable_rows": 245526,
+      "rows_leaving_domain": 0,
+      "share_of_all_rows": 0.0,
+      "share_of_applicable_rows": 0.0
+    },
+    {
+      "feature": "Srate",
+      "rows": "all",
+      "min": 0,
+      "max": null,
+      "applicable_rows": 245526,
+      "rows_leaving_domain": 0,
+      "share_of_all_rows": 0.0,
+      "share_of_applicable_rows": 0.0
+    },
+    {
+      "feature": "Drate",
+      "rows": "all",
+      "min": 0,
+      "max": null,
+      "applicable_rows": 245526,
+      "rows_leaving_domain": 0,
+      "share_of_all_rows": 0.0,
+      "share_of_applicable_rows": 0.0
+    },
+    {
+      "feature": "Rate",
+      "rows": "all",
+      "min": 0,
+      "max": null,
+      "applicable_rows": 245526,
+      "rows_leaving_domain": 0,
+      "share_of_all_rows": 0.0,
+      "share_of_applicable_rows": 0.0
+    }
+  ],
+  "relations": [
+    {
+      "relation": "Srate x flow_active_time",
+      "rows": "all",
+      "tied_by": "Srate = packets / flow duration",
+      "rows_checked": 207006,
+      "median_factor": 1.0,
+      "rows_changed": 0,
+      "flag": false
+    },
+    {
+      "relation": "Drate x flow_active_time",
+      "rows": "all",
+      "tied_by": "Drate = packets / flow duration",
+      "rows_checked": 148199,
+      "median_factor": 1.0,
+      "rows_changed": 0,
+      "flag": false
+    },
+    {
+      "relation": "Rate x IAT",
+      "rows": "ip",
+      "tied_by": "Rate = payload bits / inter-packet interval",
+      "rows_checked": 245267,
+      "median_factor": 1.0,
+      "rows_changed": 0,
+      "flag": false
+    }
+  ],
+  "intent": [
+    {
+      "feature": "IAT",
+      "rows": "all",
+      "role": "time",
+      "expected_factor": 1.6,
+      "median_factor": 1.6,
+      "flag": false
+    },
+    {
+      "feature": "flow_active_time",
+      "rows": "all",
+      "role": "time",
+      "expected_factor": 1.6,
+      "median_factor": 1.6,
+      "flag": false
+    },
+    {
+      "feature": "std_duration",
+      "rows": "all",
+      "role": "time",
+      "expected_factor": 1.6,
+      "median_factor": 1.6,
+      "flag": false
+    },
+    {
+      "feature": "Srate",
+      "rows": "all",
+      "role": "rate",
+      "expected_factor": 0.625,
+      "median_factor": 0.625,
+      "flag": false
+    },
+    {
+      "feature": "Drate",
+      "rows": "all",
+      "role": "rate",
+      "expected_factor": 0.625,
+      "median_factor": 0.625,
+      "flag": false
+    },
+    {
+      "feature": "Rate",
+      "rows": "ip",
+      "role": "rate",
+      "expected_factor": 0.625,
+      "median_factor": 0.625,
+      "flag": false
+    }
+  ],
+  "flags": 0
+}

@@ -1,0 +1,41 @@
+{
+  "name": "v2 (independent scaling), s = 1",
+  "description": "Independent-scaling transform at full strength (s = 1): as the first campaign without `Duration`.",
+  "intent": {
+    "kind": "retime",
+    "factor": 1.6
+  },
+  "operations": [
+    {
+      "feature": "Rate",
+      "op": "mul",
+      "value": 0.4
+    },
+    {
+      "feature": "Srate",
+      "op": "mul",
+      "value": 0.4
+    },
+    {
+      "feature": "Drate",
+      "op": "mul",
+      "value": 0.4
+    },
+    {
+      "feature": "IAT",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "flow_active_time",
+      "op": "mul",
+      "value": 1.6
+    },
+    {
+      "feature": "Entropy",
+      "op": "add",
+      "value": -0.5,
+      "floor_raw_quantile": 0.05
+    }
+  ]
+}
