@@ -16,6 +16,7 @@
 | Packet-level check, frozen | tag `uav02-v4-freeze` (commit `1719dc3`, 2026-11-10), pushed before any raw capture was opened | `../v4_packet_level_check/DESIGN_V4.md` and `code/`; `../tools/drift_validity_check/` |
 | Packet-level check, results | tag `uav02-v4-results` (commit `56ba1e8`, 2026-11-11) | `../v4_packet_level_check/results/` (analysis run once; post-hoc `Rate` diagnostic in `results/post_hoc/`) |
 | Release | tag `uav02-release-v3.1.0` (2026-11-12) | two post-hoc scripts in `post_hoc/`, `verify_v3_hashes.py`, the section "Release 3.1.0" below |
+| Correction release | tag `uav02-release-v3.1.1` (2026-11-12) | documentation only: the steps to re-run the frozen analysis from a clean copy (below) |
 
 The runner refused to start unless every file in `SHA256SUMS_v3` matched, the repository was clean, and HEAD carried the freeze tag. All 27 hashes were verified again after the campaign.
 
@@ -91,4 +92,4 @@ cd fl_pipeline_v3
 python3 analyze_v3.py --results-dir ../../results --out-dir /tmp/v3_analysis
 ```
 
-The three files written (`summary.txt`, `gates.json`, `table.csv`) are byte-identical to those in `results/analysis/`. Without the `data_audit/` step the script stops with `ModuleNotFoundError: No module named 'prepare_isot'`. The post-hoc scripts need the same step, with `results/` available as `fl_pipeline_v3/results_v3/` and the scripts placed in `fl_pipeline_v3/post_hoc/`. (Added 2026-11-12, after release 3.1.0; tested on a clean copy.)
+The three files written (`summary.txt`, `gates.json`, `table.csv`) are byte-identical to those in `results/analysis/`. Without the `data_audit/` step the script stops with `ModuleNotFoundError: No module named 'prepare_isot'`. The post-hoc scripts need the same step, with `results/` available as `fl_pipeline_v3/results_v3/` and the scripts placed in `fl_pipeline_v3/post_hoc/`. (Added in release 3.1.1, 2026-11-12; tested on a clean copy. Release 3.1.0 stated that no path setup was needed for `analyze_v3.py`; that was wrong.)

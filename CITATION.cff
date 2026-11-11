@@ -10,7 +10,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-0871-5153"
 license: MIT
 repository-code: "https://github.com/ameen-banjar/uav02-controlled-covariate-drift-federated-ids"
-version: "3.1.0"
+version: "3.1.1"
 date-released: "2026-11-12"
 keywords:
   - federated learning
