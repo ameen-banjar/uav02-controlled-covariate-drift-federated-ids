@@ -1,0 +1,1353 @@
+{
+  "threshold": 0.999,
+  "rel_tol": 1e-06,
+  "abs_tol": 1e-09,
+  "gates": [
+    {
+      "session": "slowloris_5_1_15mins",
+      "category": "DoS",
+      "subfiles": 1,
+      "rows_ours": 177,
+      "rows_distributed": 177,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 1.0,
+        "Protocol Type": 1.0
+      },
+      "passed": true
+    },
+    {
+      "session": "Instruction_injection_8_5_14_4mins",
+      "category": "Injection",
+      "subfiles": 1,
+      "rows_ours": 359,
+      "rows_distributed": 359,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 0.9693593314763231,
+        "Protocol Type": 1.0
+      },
+      "passed": false
+    },
+    {
+      "session": "IP_spoofing_4_5_17_1mins",
+      "category": "Ip Spoofing",
+      "subfiles": 1,
+      "rows_ours": 193,
+      "rows_distributed": 193,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 1.0,
+        "Protocol Type": 1.0
+      },
+      "passed": true
+    },
+    {
+      "session": "mitm_station_mode_5_5_24",
+      "category": "MITM",
+      "subfiles": 1,
+      "rows_ours": 1277,
+      "rows_distributed": 1277,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 0.990602975724354,
+        "Protocol Type": 1.0
+      },
+      "passed": false
+    },
+    {
+      "session": "manipulate_1_5_22_10mins",
+      "category": "Manipulation",
+      "subfiles": 1,
+      "rows_ours": 973,
+      "rows_distributed": 973,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 1.0,
+        "Protocol Type": 1.0
+      },
+      "passed": true
+    },
+    {
+      "session": "pwd_crack_deau_and_eqpol_1_5_6_30mins_raw",
+      "category": "Password Cracking",
+      "subfiles": 12,
+      "rows_ours": 89053,
+      "rows_distributed": 89053,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 1.0,
+        "Protocol Type": 1.0
+      },
+      "passed": true
+    },
+    {
+      "session": "regular_16_2_5_20",
+      "category": "Regular",
+      "subfiles": 7,
+      "rows_ours": 10442,
+      "rows_distributed": 10442,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 1.0,
+        "Protocol Type": 1.0
+      },
+      "passed": true
+    },
+    {
+      "session": "replay_4_5_22_10mins",
+      "category": "Replay",
+      "subfiles": 1,
+      "rows_ours": 888,
+      "rows_distributed": 888,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 1.0,
+        "Protocol Type": 1.0
+      },
+      "passed": true
+    },
+    {
+      "session": "unauthen_8_5_16_3mins",
+      "category": "Unauth",
+      "subfiles": 1,
+      "rows_ours": 203,
+      "rows_distributed": 203,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 0.2512315270935961,
+        "Protocol Type": 1.0
+      },
+      "passed": false
+    },
+    {
+      "session": "video_6_5_14_5mins",
+      "category": "Video",
+      "subfiles": 6,
+      "rows_ours": 8409,
+      "rows_distributed": 8409,
+      "column_shares": {
+        "IAT": 1.0,
+        "flow_active_time": 1.0,
+        "std_duration": 1.0,
+        "Srate": 1.0,
+        "Drate": 1.0,
+        "Rate": 0.9991675585682007,
+        "Protocol Type": 1.0
+      },
+      "passed": false
+    }
+  ],
+  "notes": [],
+  "predictions": {
+    "P1_td_ip": {
+      "verdict": "holds",
+      "pooled": [
+        {
+          "column": "IAT",
+          "rows": 22921,
+          "agree": 22921,
+          "max_abs_diff": 1.7763568394002505e-15,
+          "max_rel_diff": 8.854253754584612e-13,
+          "share": 1.0
+        },
+        {
+          "column": "flow_active_time",
+          "rows": 22921,
+          "agree": 22921,
+          "max_abs_diff": 2.2737367544323206e-13,
+          "max_rel_diff": 2.094610479828455e-13,
+          "share": 1.0
+        },
+        {
+          "column": "std_duration",
+          "rows": 22921,
+          "agree": 22921,
+          "max_abs_diff": 8.526512829121202e-14,
+          "max_rel_diff": 1.7050554212938902e-13,
+          "share": 1.0
+        },
+        {
+          "column": "Srate",
+          "rows": 22921,
+          "agree": 22921,
+          "max_abs_diff": 4.547473508864641e-13,
+          "max_rel_diff": 7.559680394600561e-16,
+          "share": 1.0
+        },
+        {
+          "column": "Drate",
+          "rows": 22921,
+          "agree": 22921,
+          "max_abs_diff": 7.275957614183426e-12,
+          "max_rel_diff": 5.248682572415141e-15,
+          "share": 1.0
+        },
+        {
+          "column": "Rate",
+          "rows": 22921,
+          "agree": 22921,
+          "max_abs_diff": 2.2737367544323206e-13,
+          "max_rel_diff": 8.073529697810695e-14,
+          "share": 1.0
+        }
+      ]
+    },
+    "P2_td_dot11": {
+      "verdict": "holds",
+      "pooled": [
+        {
+          "column": "IAT",
+          "rows": 89053,
+          "agree": 89053,
+          "max_abs_diff": 8.881784197001252e-16,
+          "max_rel_diff": 9.960230055073933e-13,
+          "share": 1.0
+        },
+        {
+          "column": "flow_active_time",
+          "rows": 89053,
+          "agree": 89053,
+          "max_abs_diff": 1.7053025658242404e-13,
+          "max_rel_diff": 3.086964518883292e-13,
+          "share": 1.0
+        },
+        {
+          "column": "std_duration",
+          "rows": 89053,
+          "agree": 89053,
+          "max_abs_diff": 8.526512829121202e-14,
+          "max_rel_diff": 6.807363510412671e-13,
+          "share": 1.0
+        },
+        {
+          "column": "Srate",
+          "rows": 89053,
+          "agree": 89053,
+          "max_abs_diff": 1.4551915228366852e-11,
+          "max_rel_diff": 1.736419476563347e-15,
+          "share": 1.0
+        },
+        {
+          "column": "Drate",
+          "rows": 89053,
+          "agree": 89053,
+          "max_abs_diff": 9.094947017729282e-13,
+          "max_rel_diff": 1.3647450877729766e-14,
+          "share": 1.0
+        }
+      ]
+    },
+    "P2_rate_unchanged_dot11": {
+      "verdict": "holds",
+      "pooled": [
+        {
+          "column": "Rate",
+          "rows": 89053,
+          "agree": 89053,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        }
+      ]
+    },
+    "P3_unchanged": {
+      "verdict": "holds",
+      "pooled": [
+        {
+          "column": "Payload_Length",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Var_Payload",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Protocol Type",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Duration",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Entropy",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Drone_port",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "OUI",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "fin_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "syn_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "rst_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "psh_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "ack_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "urg_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "ece_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "cwr_flag_number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "ack_count",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "syn_count",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "fin_count",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "urg_count",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "rst_count",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "CoAP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "HTTP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "HTTPS",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "DNS",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Telnet",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "SMTP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "SSH",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "IRC",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "TCP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "UDP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "DHCP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "ARP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "ICMP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "IGMP",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "IPv",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "LLC",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Tot sum",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Min",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Max",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "AVG",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Std",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Tot size",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Magnitue",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Radius",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Covariance",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Variance",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Weight",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "DS status",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Fragments",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Sequence number",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        },
+        {
+          "column": "Protocol Version",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        }
+      ]
+    },
+    "P4_no_mixed_slice": {
+      "verdict": "holds",
+      "pooled": [
+        {
+          "column": "Protocol Type",
+          "rows": 111974,
+          "agree": 111974,
+          "max_abs_diff": 0.0,
+          "max_rel_diff": 0.0,
+          "share": 1.0
+        }
+      ]
+    }
+  },
+  "descriptive": {
+    "P1_td_ip_D1": [
+      {
+        "column": "IAT",
+        "rows": 4070,
+        "agree": 4070,
+        "max_abs_diff": 8.881784197001252e-16,
+        "max_rel_diff": 9.737497359749924e-13,
+        "share": 1.0
+      },
+      {
+        "column": "flow_active_time",
+        "rows": 4070,
+        "agree": 4070,
+        "max_abs_diff": 2.2737367544323206e-13,
+        "max_rel_diff": 2.0941738297388515e-13,
+        "share": 1.0
+      },
+      {
+        "column": "std_duration",
+        "rows": 4070,
+        "agree": 4070,
+        "max_abs_diff": 8.526512829121202e-14,
+        "max_rel_diff": 2.0996677806021876e-13,
+        "share": 1.0
+      },
+      {
+        "column": "Srate",
+        "rows": 4070,
+        "agree": 4070,
+        "max_abs_diff": 9.094947017729282e-13,
+        "max_rel_diff": 4.359265600616411e-16,
+        "share": 1.0
+      },
+      {
+        "column": "Drate",
+        "rows": 4070,
+        "agree": 4070,
+        "max_abs_diff": 1.4551915228366852e-11,
+        "max_rel_diff": 4.226358188419433e-15,
+        "share": 1.0
+      },
+      {
+        "column": "Rate",
+        "rows": 4070,
+        "agree": 4070,
+        "max_abs_diff": 5.684341886080802e-14,
+        "max_rel_diff": 7.08932118274856e-14,
+        "share": 1.0
+      }
+    ],
+    "P2_td_dot11_D1": [
+      {
+        "column": "IAT",
+        "rows": 0,
+        "agree": 0,
+        "max_abs_diff": NaN,
+        "max_rel_diff": NaN,
+        "share": NaN
+      },
+      {
+        "column": "flow_active_time",
+        "rows": 0,
+        "agree": 0,
+        "max_abs_diff": NaN,
+        "max_rel_diff": NaN,
+        "share": NaN
+      },
+      {
+        "column": "std_duration",
+        "rows": 0,
+        "agree": 0,
+        "max_abs_diff": NaN,
+        "max_rel_diff": NaN,
+        "share": NaN
+      },
+      {
+        "column": "Srate",
+        "rows": 0,
+        "agree": 0,
+        "max_abs_diff": NaN,
+        "max_rel_diff": NaN,
+        "share": NaN
+      },
+      {
+        "column": "Drate",
+        "rows": 0,
+        "agree": 0,
+        "max_abs_diff": NaN,
+        "max_rel_diff": NaN,
+        "share": NaN
+      }
+    ],
+    "D2_v2_distance": [
+      {
+        "column": "IAT",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 1.7763568394002505e-15,
+        "max_rel_diff": 9.960230055073933e-13,
+        "share": 1.0
+      },
+      {
+        "column": "flow_active_time",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 2.2737367544323206e-13,
+        "max_rel_diff": 3.086964518883292e-13,
+        "share": 1.0
+      },
+      {
+        "column": "std_duration",
+        "rows": 111974,
+        "agree": 0,
+        "max_abs_diff": 99.68693823958569,
+        "max_rel_diff": 0.6000000000010893,
+        "share": 0.0
+      },
+      {
+        "column": "Srate",
+        "rows": 111974,
+        "agree": 0,
+        "max_abs_diff": 45294.09052038002,
+        "max_rel_diff": 0.5625000000000009,
+        "share": 0.0
+      },
+      {
+        "column": "Drate",
+        "rows": 111974,
+        "agree": 19330,
+        "max_abs_diff": 22866.79859021851,
+        "max_rel_diff": 0.5625000000000032,
+        "share": 0.17262936038723276
+      },
+      {
+        "column": "Rate",
+        "rows": 111974,
+        "agree": 7265,
+        "max_abs_diff": 428.0460883971964,
+        "max_rel_diff": 1.5,
+        "share": 0.06488113312018862
+      },
+      {
+        "column": "Entropy",
+        "rows": 111974,
+        "agree": 89081,
+        "max_abs_diff": 4.019830383480434,
+        "max_rel_diff": 378418371977.9189,
+        "share": 0.795550752853341
+      }
+    ],
+    "D3_iat_empty_same": [
+      {
+        "column": "IAT",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      }
+    ],
+    "D4_rebase": [
+      {
+        "column": "Payload_Length",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Var_Payload",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Protocol Type",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Duration",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Entropy",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Drone_port",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "OUI",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Rate",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Srate",
+        "rows": 111974,
+        "agree": 111193,
+        "max_abs_diff": 9715.225235720922,
+        "max_rel_diff": 0.04826072569121687,
+        "share": 0.9930251665565221
+      },
+      {
+        "column": "Drate",
+        "rows": 111974,
+        "agree": 111737,
+        "max_abs_diff": 4857.633415346121,
+        "max_rel_diff": 0.04779713758971069,
+        "share": 0.997883437226499
+      },
+      {
+        "column": "fin_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "syn_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "rst_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "psh_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "ack_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "urg_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "ece_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "cwr_flag_number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "ack_count",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "syn_count",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "fin_count",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "urg_count",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "rst_count",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "std_duration",
+        "rows": 111974,
+        "agree": 111734,
+        "max_abs_diff": 4.541831080001092e-08,
+        "max_rel_diff": 0.00022929378970511176,
+        "share": 0.9978566452926573
+      },
+      {
+        "column": "CoAP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "HTTP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "HTTPS",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "DNS",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Telnet",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "SMTP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "SSH",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "IRC",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "TCP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "UDP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "DHCP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "ARP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "ICMP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "IGMP",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "IPv",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "LLC",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Tot sum",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Min",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Max",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "AVG",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Std",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Tot size",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "IAT",
+        "rows": 111974,
+        "agree": 34297,
+        "max_abs_diff": 7.082112630208414e-08,
+        "max_rel_diff": 0.01869756525213067,
+        "share": 0.30629431832389664
+      },
+      {
+        "column": "Number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Magnitue",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Radius",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Covariance",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Variance",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Weight",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "DS status",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Fragments",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Sequence number",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "Protocol Version",
+        "rows": 111974,
+        "agree": 111974,
+        "max_abs_diff": 0.0,
+        "max_rel_diff": 0.0,
+        "share": 1.0
+      },
+      {
+        "column": "flow_active_time",
+        "rows": 111974,
+        "agree": 111696,
+        "max_abs_diff": 2.1377410774903183e-07,
+        "max_rel_diff": 0.0002627023005367106,
+        "share": 0.9975172807973279
+      }
+    ]
+  }
+}

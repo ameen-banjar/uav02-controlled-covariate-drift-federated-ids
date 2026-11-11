@@ -1,0 +1,33 @@
+{
+  "capture": "Instruction_injection_8_5_14_4mins.pcap",
+  "capture_bytes": 630688,
+  "capture_sha256": "9b205dbc40e66088b15befd14ae9032330b5ddccacbdc4374e6e8a74559927e1",
+  "tcpdump_returncode": 0,
+  "tcpdump_stderr_tail": "reading from file <workspace>/v4_packet_check/raw_pcap/Instruction_injection_8_5_14_4mins.pcap, link-type EN10MB (Ethernet)\n",
+  "split_done": true,
+  "subfiles": [
+    "split"
+  ],
+  "variants": [
+    "orig",
+    "c10",
+    "c16",
+    "c13"
+  ],
+  "retime": {
+    "c10/split": {
+      "packets": 3590,
+      "inexact_divisions": 0
+    },
+    "c16/split": {
+      "packets": 3590,
+      "inexact_divisions": 0
+    },
+    "c13/split": {
+      "packets": 3590,
+      "inexact_divisions": 0
+    }
+  },
+  "extraction_failures": 0,
+  "finished": "2026-11-10T22:27:04+0300"
+}

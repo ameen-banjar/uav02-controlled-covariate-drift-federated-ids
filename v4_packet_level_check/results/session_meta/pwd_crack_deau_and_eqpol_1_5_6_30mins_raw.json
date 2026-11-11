@@ -1,0 +1,127 @@
+{
+  "capture": "pwd_crack_deau_and_eqpol_1_5_6_30mins_raw.pcap",
+  "capture_bytes": 237059825,
+  "capture_sha256": "7f88fc83d8102f5a6ee1603ee9c6a67e5727ca9d898d12fa8f063313b901a1ba",
+  "tcpdump_returncode": 0,
+  "tcpdump_stderr_tail": "reading from file <workspace>/v4_packet_check/raw_pcap/pwd_crack_deau_and_eqpol_1_5_6_30mins_raw.pcap, link-type IEEE802_11_RADIO (802.11 plus radiotap header)\n",
+  "split_done": true,
+  "subfiles": [
+    "split",
+    "split1",
+    "split2",
+    "split3",
+    "split4",
+    "split5",
+    "split6",
+    "split7",
+    "split8",
+    "split9",
+    "split10",
+    "split11"
+  ],
+  "variants": [
+    "orig",
+    "c10",
+    "c16"
+  ],
+  "retime": {
+    "c10/split": {
+      "packets": 73159,
+      "inexact_divisions": 0
+    },
+    "c10/split1": {
+      "packets": 73653,
+      "inexact_divisions": 0
+    },
+    "c10/split2": {
+      "packets": 70604,
+      "inexact_divisions": 0
+    },
+    "c10/split3": {
+      "packets": 70872,
+      "inexact_divisions": 0
+    },
+    "c10/split4": {
+      "packets": 70312,
+      "inexact_divisions": 0
+    },
+    "c10/split5": {
+      "packets": 74803,
+      "inexact_divisions": 0
+    },
+    "c10/split6": {
+      "packets": 75880,
+      "inexact_divisions": 0
+    },
+    "c10/split7": {
+      "packets": 73045,
+      "inexact_divisions": 0
+    },
+    "c10/split8": {
+      "packets": 78123,
+      "inexact_divisions": 0
+    },
+    "c10/split9": {
+      "packets": 78638,
+      "inexact_divisions": 0
+    },
+    "c10/split10": {
+      "packets": 79338,
+      "inexact_divisions": 0
+    },
+    "c10/split11": {
+      "packets": 72050,
+      "inexact_divisions": 0
+    },
+    "c16/split": {
+      "packets": 73159,
+      "inexact_divisions": 0
+    },
+    "c16/split1": {
+      "packets": 73653,
+      "inexact_divisions": 0
+    },
+    "c16/split2": {
+      "packets": 70604,
+      "inexact_divisions": 0
+    },
+    "c16/split3": {
+      "packets": 70872,
+      "inexact_divisions": 0
+    },
+    "c16/split4": {
+      "packets": 70312,
+      "inexact_divisions": 0
+    },
+    "c16/split5": {
+      "packets": 74803,
+      "inexact_divisions": 0
+    },
+    "c16/split6": {
+      "packets": 75880,
+      "inexact_divisions": 0
+    },
+    "c16/split7": {
+      "packets": 73045,
+      "inexact_divisions": 0
+    },
+    "c16/split8": {
+      "packets": 78123,
+      "inexact_divisions": 0
+    },
+    "c16/split9": {
+      "packets": 78638,
+      "inexact_divisions": 0
+    },
+    "c16/split10": {
+      "packets": 79338,
+      "inexact_divisions": 0
+    },
+    "c16/split11": {
+      "packets": 72050,
+      "inexact_divisions": 0
+    }
+  },
+  "extraction_failures": 0,
+  "finished": "2026-11-11T04:13:33+0300"
+}

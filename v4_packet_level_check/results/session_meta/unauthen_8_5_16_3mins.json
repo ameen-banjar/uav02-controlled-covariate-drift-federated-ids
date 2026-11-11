@@ -1,0 +1,33 @@
+{
+  "capture": "unauthen_8_5_16_3mins.pcap",
+  "capture_bytes": 395549,
+  "capture_sha256": "22a859daa31154b777504a77e6c6773a0333ed36039cedffc08c8307e9bc4a0e",
+  "tcpdump_returncode": 0,
+  "tcpdump_stderr_tail": "reading from file <workspace>/v4_packet_check/raw_pcap/unauthen_8_5_16_3mins.pcap, link-type EN10MB (Ethernet)\n",
+  "split_done": true,
+  "subfiles": [
+    "split"
+  ],
+  "variants": [
+    "orig",
+    "c10",
+    "c16",
+    "c13"
+  ],
+  "retime": {
+    "c10/split": {
+      "packets": 2034,
+      "inexact_divisions": 0
+    },
+    "c16/split": {
+      "packets": 2034,
+      "inexact_divisions": 0
+    },
+    "c13/split": {
+      "packets": 2034,
+      "inexact_divisions": 0
+    }
+  },
+  "extraction_failures": 0,
+  "finished": "2026-11-10T22:26:45+0300"
+}

@@ -1,0 +1,102 @@
+{
+  "slowloris_5_1_15mins": {
+    "rows": 177,
+    "columns_differing": {},
+    "rate_bad": 0,
+    "payload_bad": 0,
+    "rate_bad_with_payload_bad": 0,
+    "rate_bad_without_payload_bad": 0
+  },
+  "Instruction_injection_8_5_14_4mins": {
+    "rows": 359,
+    "columns_differing": {
+      "Payload_Length": 11,
+      "Var_Payload": 11,
+      "Entropy": 11,
+      "Rate": 11
+    },
+    "rate_bad": 11,
+    "payload_bad": 11,
+    "rate_bad_with_payload_bad": 11,
+    "rate_bad_without_payload_bad": 0
+  },
+  "IP_spoofing_4_5_17_1mins": {
+    "rows": 193,
+    "columns_differing": {},
+    "rate_bad": 0,
+    "payload_bad": 0,
+    "rate_bad_with_payload_bad": 0,
+    "rate_bad_without_payload_bad": 0
+  },
+  "mitm_station_mode_5_5_24": {
+    "rows": 1277,
+    "columns_differing": {
+      "Payload_Length": 13,
+      "Var_Payload": 13,
+      "Entropy": 14,
+      "Rate": 12
+    },
+    "rate_bad": 12,
+    "payload_bad": 13,
+    "rate_bad_with_payload_bad": 12,
+    "rate_bad_without_payload_bad": 0
+  },
+  "manipulate_1_5_22_10mins": {
+    "rows": 973,
+    "columns_differing": {},
+    "rate_bad": 0,
+    "payload_bad": 0,
+    "rate_bad_with_payload_bad": 0,
+    "rate_bad_without_payload_bad": 0
+  },
+  "pwd_crack_deau_and_eqpol_1_5_6_30mins_raw": {
+    "rows": 89053,
+    "columns_differing": {},
+    "rate_bad": 0,
+    "payload_bad": 0,
+    "rate_bad_with_payload_bad": 0,
+    "rate_bad_without_payload_bad": 0
+  },
+  "regular_16_2_5_20": {
+    "rows": 10442,
+    "columns_differing": {},
+    "rate_bad": 0,
+    "payload_bad": 0,
+    "rate_bad_with_payload_bad": 0,
+    "rate_bad_without_payload_bad": 0
+  },
+  "replay_4_5_22_10mins": {
+    "rows": 888,
+    "columns_differing": {},
+    "rate_bad": 0,
+    "payload_bad": 0,
+    "rate_bad_with_payload_bad": 0,
+    "rate_bad_without_payload_bad": 0
+  },
+  "unauthen_8_5_16_3mins": {
+    "rows": 203,
+    "columns_differing": {
+      "Payload_Length": 152,
+      "Var_Payload": 152,
+      "Entropy": 152,
+      "Rate": 152
+    },
+    "rate_bad": 152,
+    "payload_bad": 152,
+    "rate_bad_with_payload_bad": 152,
+    "rate_bad_without_payload_bad": 0
+  },
+  "video_6_5_14_5mins": {
+    "rows": 8409,
+    "columns_differing": {
+      "Payload_Length": 7,
+      "Var_Payload": 7,
+      "Entropy": 7,
+      "Rate": 7
+    },
+    "rate_bad": 7,
+    "payload_bad": 7,
+    "rate_bad_with_payload_bad": 7,
+    "rate_bad_without_payload_bad": 0
+  }
+}

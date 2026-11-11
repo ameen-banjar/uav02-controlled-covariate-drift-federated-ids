@@ -1,0 +1,33 @@
+{
+  "capture": "replay_4_5_22_10mins.pcap",
+  "capture_bytes": 711329,
+  "capture_sha256": "fc8ff0d1a32168aece8c1e7ba5ebc840b93539f14e4f7c7c804e41cbd05a36bc",
+  "tcpdump_returncode": 0,
+  "tcpdump_stderr_tail": "reading from file <workspace>/v4_packet_check/raw_pcap/replay_4_5_22_10mins.pcap, link-type EN10MB (Ethernet)\n",
+  "split_done": true,
+  "subfiles": [
+    "split"
+  ],
+  "variants": [
+    "orig",
+    "c10",
+    "c16",
+    "c13"
+  ],
+  "retime": {
+    "c10/split": {
+      "packets": 8893,
+      "inexact_divisions": 0
+    },
+    "c16/split": {
+      "packets": 8893,
+      "inexact_divisions": 0
+    },
+    "c13/split": {
+      "packets": 8893,
+      "inexact_divisions": 0
+    }
+  },
+  "extraction_failures": 0,
+  "finished": "2026-11-10T22:28:37+0300"
+}

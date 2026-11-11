@@ -1,0 +1,33 @@
+{
+  "capture": "slowloris_5_1_15mins.pcap",
+  "capture_bytes": 162317,
+  "capture_sha256": "8cabf7cca246645221fe2ab1e3490dae908d00c51901de8b0ba02bde12d1f62f",
+  "tcpdump_returncode": 0,
+  "tcpdump_stderr_tail": "reading from file <workspace>/v4_packet_check/raw_pcap/slowloris_5_1_15mins.pcap, link-type EN10MB (Ethernet)\n",
+  "split_done": true,
+  "subfiles": [
+    "split"
+  ],
+  "variants": [
+    "orig",
+    "c10",
+    "c16",
+    "c13"
+  ],
+  "retime": {
+    "c10/split": {
+      "packets": 1770,
+      "inexact_divisions": 0
+    },
+    "c16/split": {
+      "packets": 1770,
+      "inexact_divisions": 0
+    },
+    "c13/split": {
+      "packets": 1770,
+      "inexact_divisions": 0
+    }
+  },
+  "extraction_failures": 0,
+  "finished": "2026-11-10T22:26:34+0300"
+}

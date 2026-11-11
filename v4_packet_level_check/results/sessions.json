@@ -1,0 +1,42 @@
+{
+  "slowloris_5_1_15mins": {
+    "category": "DoS",
+    "distributed_csv": "<workspace>/isot_drone_dataset/DoS/slowloris_5_1_15mins.pcap.csv"
+  },
+  "Instruction_injection_8_5_14_4mins": {
+    "category": "Injection",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Injection/Instruction_injection_8_5_14_4mins.pcap.csv"
+  },
+  "IP_spoofing_4_5_17_1mins": {
+    "category": "Ip Spoofing",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Ip Spoofing/IP_spoofing_4_5_17_1mins.pcap.csv"
+  },
+  "mitm_station_mode_5_5_24": {
+    "category": "MITM",
+    "distributed_csv": "<workspace>/isot_drone_dataset/MITM/mitm_station_mode_5_5_24.pcap.csv"
+  },
+  "manipulate_1_5_22_10mins": {
+    "category": "Manipulation",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Manipulation/manipulate_1_5_22_10mins.pcap.csv"
+  },
+  "pwd_crack_deau_and_eqpol_1_5_6_30mins_raw": {
+    "category": "Password Cracking",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Password Cracking/pwd_crack_deau_and_eqpol_1_5_6_30mins_raw.pcap.csv"
+  },
+  "regular_16_2_5_20": {
+    "category": "Regular",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Regular/regular_16_2_5_20.pcap.csv"
+  },
+  "replay_4_5_22_10mins": {
+    "category": "Replay",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Replay/replay_4_5_22_10mins.pcap.csv"
+  },
+  "unauthen_8_5_16_3mins": {
+    "category": "Unauth",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Unauth/unauthen_8_5_16_3mins.pcap.csv"
+  },
+  "video_6_5_14_5mins": {
+    "category": "Video",
+    "distributed_csv": "<workspace>/isot_drone_dataset/Video/video_6_5_14_5mins.pcap.csv"
+  }
+}

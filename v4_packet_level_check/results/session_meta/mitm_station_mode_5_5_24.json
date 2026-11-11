@@ -1,0 +1,33 @@
+{
+  "capture": "mitm_station_mode_5_5_24.pcap",
+  "capture_bytes": 2598440,
+  "capture_sha256": "3cab213c39146e40981dd7be2b2d299197a42178d37c530ab80c358daa9ffc73",
+  "tcpdump_returncode": 0,
+  "tcpdump_stderr_tail": "reading from file <workspace>/v4_packet_check/raw_pcap/mitm_station_mode_5_5_24.pcap, link-type EN10MB (Ethernet)\n",
+  "split_done": true,
+  "subfiles": [
+    "split"
+  ],
+  "variants": [
+    "orig",
+    "c10",
+    "c16",
+    "c13"
+  ],
+  "retime": {
+    "c10/split": {
+      "packets": 12772,
+      "inexact_divisions": 0
+    },
+    "c16/split": {
+      "packets": 12772,
+      "inexact_divisions": 0
+    },
+    "c13/split": {
+      "packets": 12772,
+      "inexact_divisions": 0
+    }
+  },
+  "extraction_failures": 0,
+  "finished": "2026-11-10T22:33:04+0300"
+}
