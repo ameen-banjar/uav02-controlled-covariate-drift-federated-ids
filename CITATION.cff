@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, protocol, or derived results, please cite this software and the associated paper once published."
 type: software
-title: "Reproducibility Package: Synthetic Covariate Drift in Federated UAV Intrusion Detection, Three Frozen Campaigns (UAV-02)"
+title: "Reproducibility Package: Synthetic Covariate Drift in Federated UAV Intrusion Detection, Three Frozen Campaigns, a Packet-Level Check and a Validity Checker (UAV-02)"
 authors:
   - family-names: Banjar
     given-names: Ameen
@@ -10,8 +10,8 @@ authors:
     orcid: "https://orcid.org/0000-0002-0871-5153"
 license: MIT
 repository-code: "https://github.com/ameen-banjar/uav02-controlled-covariate-drift-federated-ids"
-version: "3.0.1"
-date-released: "2026-11-08"
+version: "3.1.0"
+date-released: "2026-11-12"
 keywords:
   - federated learning
   - intrusion detection
@@ -23,7 +23,7 @@ keywords:
   - reproducibility
 preferred-citation:
   type: article
-  title: "Does the Drift Effect Depend on How Drift Is Built? Frozen Comparisons of Synthetic Covariate Drift in Federated UAV Intrusion Detection"
+  title: "Synthetic Drift Construction Changes Measured Robustness in Federated UAV Intrusion Detection"
   authors:
     - family-names: Banjar
       given-names: Ameen

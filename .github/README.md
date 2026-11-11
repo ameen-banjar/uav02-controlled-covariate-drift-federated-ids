@@ -1,5 +1,7 @@
 # UAV-02 reproducibility package
 
+> **Release 3.1.0 (2026-11-12).** Adds the packet-level check of time dilation (`v4_packet_level_check/`), the drift validity checker (`tools/drift_validity_check/`), two post-hoc scripts in `v3/post_hoc/` (same-checkpoint class figure; MITM precision and F1) and `v3/verify_v3_hashes.py`. No frozen file, result or number of v1, v2 or v3 changed. The manuscript that uses this release is titled *Synthetic Drift Construction Changes Measured Robustness in Federated UAV Intrusion Detection*; the title below is that of the first version. Start with `v3/README.md` for the third campaign and the sections "Release 3.1.0" there.
+
 **Controlled Temporal Covariate Drift in Federated UAV Intrusion Detection: Separating Immediate Response, Training History, and Post-Removal Residuals.** Ameen Banjar, University of Jeddah (abanjar@uj.edu.sa, ORCID 0000-0002-0871-5153).
 
 This repository lets a reader:

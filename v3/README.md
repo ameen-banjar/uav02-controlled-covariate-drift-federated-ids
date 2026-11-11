@@ -13,6 +13,9 @@
 | Post hoc | commit `a70c862` | `post_hoc/` (paired td−v2 comparisons, clean performance levels, Figures 2–6), `evidence/` |
 | Release | tag `uav02-release-v3.0.0` | this README, `CITATION.cff` |
 | Correction release | tag `uav02-release-v3.0.1` (sign-label fix in commit `8e570cb`) | corrected post-hoc label; this README's corrections section |
+| Packet-level check, frozen | tag `uav02-v4-freeze` (commit `1719dc3`, 2026-11-10), pushed before any raw capture was opened | `../v4_packet_level_check/DESIGN_V4.md` and `code/`; `../tools/drift_validity_check/` |
+| Packet-level check, results | tag `uav02-v4-results` (commit `56ba1e8`, 2026-11-11) | `../v4_packet_level_check/results/` (analysis run once; post-hoc `Rate` diagnostic in `results/post_hoc/`) |
+| Release | tag `uav02-release-v3.1.0` (2026-11-12) | two post-hoc scripts in `post_hoc/`, `verify_v3_hashes.py`, the section "Release 3.1.0" below |
 
 The runner refused to start unless every file in `SHA256SUMS_v3` matched, the repository was clean, and HEAD carried the freeze tag. All 27 hashes were verified again after the campaign.
 
@@ -50,3 +53,28 @@ No result, frozen file, seed or number changed.
 2. **802.11 field descriptions.** We checked the ISOT extractor at isot-lab commit `783e9bf` again. The dated addendum (A2–A3) describes two fields imprecisely; it is kept unchanged as a dated record.
    - On 802.11 packets, `Rate` is not the raw radiotap PHY rate. `Communication_features.py` returns the payload rate derived from it, PHY rate × payload size / packet size. This value has no timing term, so leaving it unchanged under time dilation remains consistent.
    - On 802.11 packets, `Feature_extraction.py` initializes `wifi_dur` to 0 and never updates it, so the extractor writes 0 to `Duration`; the column is not a frame-duration field. This explains the zeros reported in A3, and the 255 argument for IP rows is unaffected.
+
+## Release 3.1.0 (2026-11-12)
+
+No frozen file, result or number of v1, v2 or v3 changed. This release adds material; all of it was written after the v3 results were known.
+
+1. **Packet-level check of time dilation** (`../v4_packet_level_check/`). The design and code were frozen and pushed (tag `uav02-v4-freeze`) before any raw capture file was opened, and the analysis was run once. Ten ISOT capture sessions were re-timed, the unmodified ISOT extractor (isot-lab commit `783e9bf`) was run again, and the table transform `td` was compared with the re-extracted features.
+   - All four predictions hold in all 111,974 rows (22,921 IP rows from nine sessions; 89,053 IEEE 802.11 rows, all from one session). The sessions were chosen by file size, one per category, not at random.
+   - The replication gate, which compares our extraction at the original timestamps with the distributed CSV files, **failed in four of ten sessions**, in the column `Rate` only (182 rows; 152 of them in the Unauth session). In every such row `Payload_Length` differs as well (`results/post_hoc/`). The records do not establish why the payload lengths differ. The predictions compare the extractor with itself and are not affected, but in these four sessions our extraction is not an exact replica of the distributed files.
+   - The raw captures are third-party data and are not redistributed; `results/ARCHIVE_SHA256.txt` and `results/SAMPLE_PCAP_SHA256.txt` identify the files used.
+2. **Drift validity checker** (`../tools/drift_validity_check/`). It reports name-content mismatches, values leaving their physical domain and changed rate x time relations for a tabular transform, from a feature file and a transform file, without a model. Its reports for the v1, v2 and td transforms on the 245,526 ISOT validation rows are in `reports/`.
+3. **Post-hoc scripts** in `post_hoc/` (see `post_hoc/README.md`): `make_fig_swap_classes.py` (class recall by training arm and evaluation transform; Figure 3 of the manuscript) and `mitm_precision_f1_post_hoc.py` (MITM recall, precision and F1 from the saved confusion matrices).
+4. **`verify_v3_hashes.py`.** `SHA256SUMS_v3` lists paths as they were in the development workspace. Run `python3 v3/verify_v3_hashes.py` from the repository root to check the files where they are stored here. Expected output: 24 files match, 3 data files not redistributed, 0 problems.
+
+### Paths needed to re-run the frozen v3 code
+
+`run_v3.py` and its hash guard expect the layout of the development workspace, which differs from the layout of this repository:
+
+```
+<root>/development-workspace/fl_pipeline_v3/                  <- copy of v3/code/fl_pipeline_v3/
+<root>/development-workspace/data_audit/prepare_isot.py       <- copy of v3/code/prepare_isot.py
+<root>/development-workspace/data_audit/federated_clients_manifest.json   <- copy of v3/code/federated_clients_manifest.json
+<root>/repositories/paper-02-controlled-concept-drift/        <- this repository
+```
+
+The guard also requires this repository to be clean with HEAD at the tag `uav02-v3-freeze`, the ISOT data prepared as `prepare_isot.py` describes, and, for the `cic` arm, the prepared CICIoT2023 files regenerated by `cic_v3.py`. Reading the results, re-running `analyze_v3.py` on `results/` and running the post-hoc scripts need none of this.
